@@ -1,0 +1,955 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+ADDR	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    static ADDR: RefCell<Option<Arbiter>> = RefCell::new(None);$/;"	c
+AcceptEncoding	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^struct AcceptEncoding {$/;"	s
+All	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn All<F: Guard + 'static>(guard: F) -> AllGuard {$/;"	f
+AllGuard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub struct AllGuard(Vec<Box<dyn Guard>>);$/;"	s
+Any	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Any<F: Guard + 'static>(guard: F) -> AnyGuard {$/;"	f
+AnyGuard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub struct AnyGuard(Vec<Box<dyn Guard>>);$/;"	s
+App	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^pub struct App<T, B> {$/;"	s
+AppConfig	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^pub struct AppConfig(Rc<AppConfigInner>);$/;"	s
+AppConfigInner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^struct AppConfigInner {$/;"	s
+AppEntry	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^pub struct AppEntry {$/;"	s
+AppInit	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^pub struct AppInit<T, B>$/;"	s
+AppInitResult	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^pub struct AppInitResult<T, B>$/;"	s
+AppInitService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^pub struct AppInitService<T, B>$/;"	s
+AppRouting	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^pub struct AppRouting {$/;"	s
+AppRoutingFactory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^pub struct AppRoutingFactory {$/;"	s
+AppRoutingFactoryResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^pub struct AppRoutingFactoryResponse {$/;"	s
+AppService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^pub struct AppService {$/;"	s
+Arbiter	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^pub struct Arbiter {$/;"	s
+ArbiterController	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^struct ArbiterController {$/;"	s
+BodyEncoding	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/lib.rs	/^    pub trait BodyEncoding {$/;"	t
+BoxResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^type BoxResponse = LocalBoxFuture<'static, Result<ServiceResponse, Error>>;$/;"	T
+BoxedResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^type BoxedResponse = LocalBoxFuture<'static, Result<ServiceResponse, Error>>;$/;"	T
+BoxedRouteNewService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^type BoxedRouteNewService<Req, Res> = Box<$/;"	T
+BoxedRouteService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^type BoxedRouteService<Req, Res> = Box<$/;"	T
+Builder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/builder.rs	/^pub struct Builder {$/;"	s
+CONTENT_DISPOSITION	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^        const CONTENT_DISPOSITION = 0b0000_0100;$/;"	c
+CURRENT	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    static CURRENT: RefCell<Option<System>> = RefCell::new(None);$/;"	c
+ChunkedReadFile	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^pub struct ChunkedReadFile {$/;"	s
+Compress	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^pub struct Compress(ContentEncoding);$/;"	s
+CompressMiddleware	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^pub struct CompressMiddleware<S> {$/;"	s
+CompressResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^pub struct CompressResponse<S, B>$/;"	s
+Condition	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^pub struct Condition<T> {$/;"	s
+ConditionMiddleware	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^pub enum ConditionMiddleware<E, D> {$/;"	g
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Config = ();$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Config = ();$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Config = AppConfig;$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    type Config = ();$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^        type Config = ($($T::Config),+);$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    type Config = ();$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    type Config = T::Config;$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    type Config: Default + 'static;$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Config = ();$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    type Config = ();$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    type Config = ();$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    type Config = ();$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    type Config = ();$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^struct Config {$/;"	s
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    type Config = FormConfig;$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    type Config = JsonConfig;$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    type Config = PathConfig;$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    type Config = PayloadConfig;$/;"	T
+Config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    type Config = QueryConfig;$/;"	T
+Connect	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Connect() -> MethodGuard {$/;"	f
+ConnectionInfo	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^pub struct ConnectionInfo {$/;"	s
+Context	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^            type Context = actix::Context<Self>;$/;"	T
+CreateAppRoutingItem	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^enum CreateAppRoutingItem {$/;"	g
+CreateResourceService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^pub struct CreateResourceService {$/;"	s
+CreateRouteService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^pub struct CreateRouteService {$/;"	s
+CreateRouteServiceItem	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^enum CreateRouteServiceItem {$/;"	g
+CreateScopeServiceItem	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^enum CreateScopeServiceItem {$/;"	g
+CustomResponder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^pub struct CustomResponder<T> {$/;"	s
+CustomResponderFut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^pub struct CustomResponderFut<T: Responder> {$/;"	s
+Data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^pub struct Data<T>(Arc<T>);$/;"	s
+DefaultHeaders	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^pub struct DefaultHeaders {$/;"	s
+DefaultHeadersMiddleware	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^pub struct DefaultHeadersMiddleware<S> {$/;"	s
+Delete	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Delete() -> MethodGuard {$/;"	f
+Directory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^pub struct Directory {$/;"	s
+DirectoryRenderer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^type DirectoryRenderer =$/;"	T
+DropData	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    struct DropData(Arc<AtomicBool>);$/;"	s
+ETAG	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^        const ETAG = 0b0000_0001;$/;"	c
+Either	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^pub enum Either<A, B> {$/;"	g
+EitherResponder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^pub enum EitherResponder<A, B>$/;"	g
+Enc	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/lib.rs	/^    struct Enc(ContentEncoding);$/;"	s
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Error = UriSegmentError;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Error = T::Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^        type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    type Error: Into<Error>;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Error = (Error, ServiceRequest);$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Error = Infallible;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    type Error = E::Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    type Error = S::Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    type Error = T::Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    type Error: Into<Error>;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    type Error = Error;$/;"	T
+ErrorHandler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^type ErrorHandler<B> = dyn Fn(ServiceResponse<B>) -> Result<ErrorHandlerResponse<B>>;$/;"	T
+ErrorHandlerResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^pub enum ErrorHandlerResponse<B> {$/;"	g
+ErrorHandlers	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^pub struct ErrorHandlers<B> {$/;"	s
+ErrorHandlersMiddleware	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^pub struct ErrorHandlersMiddleware<S, B> {$/;"	s
+Extract	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^pub struct Extract<T: FromRequest, S> {$/;"	s
+ExtractResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^pub struct ExtractResponse<T: FromRequest, S: Service> {$/;"	s
+ExtractService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^pub struct ExtractService<T: FromRequest, S> {$/;"	s
+FILE_INFORMATION	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/windows.rs	/^pub struct FILE_INFORMATION {$/;"	s
+Factory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^pub trait Factory<T, R, O>: Clone + 'static$/;"	t
+FdType	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/unix.rs	/^pub type FdType = RawFd;$/;"	T
+Files	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^pub struct Files {$/;"	s
+FilesError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/error.rs	/^pub enum FilesError {$/;"	g
+FilesService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^pub struct FilesService {$/;"	s
+FnDataFactory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^type FnDataFactory =$/;"	T
+FnDataFactory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^type FnDataFactory =$/;"	T
+FnExec	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^pub trait FnExec: Send + 'static {$/;"	t
+FnGuard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^struct FnGuard<F: Fn(&RequestHead) -> bool>(F);$/;"	s
+Foo	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^        struct Foo {$/;"	s
+Form	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^pub struct Form<T>(pub T);$/;"	s
+FormConfig	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^pub struct FormConfig {$/;"	s
+Format	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^struct Format(Vec<FormatText>);$/;"	s
+FormatText	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^pub enum FormatText {$/;"	g
+FromRequest	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^pub trait FromRequest: Sized {$/;"	t
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Future = Either<$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Future = LocalBoxFuture<'static, Result<Self::Service, Self::InitError>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Future = Ready<Result<Self, Self::Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    type Future = Ready<Result<HttpResponse, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Future = AppInitResult<T, B>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Future = AppRoutingFactoryResponse;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Future = BoxResponse;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Future = T::Future;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    type Future = Ready<Result<Self, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^        type Future = $fut_type<$($T),+>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    type Future = LocalBoxFuture<'static, Result<Option<T>, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    type Future = LocalBoxFuture<'static, Result<Result<T, T::Error>, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    type Future = Ready<Result<(), Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    type Future: Future<Output = Result<Self, Self::Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Future = ExtractResponse<T, S>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Future = HandlerServiceResponse<R, O>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Future = Ready<Result<Self::Service, ()>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    type Future = CompressResponse<S, B>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    type Future = Ready<Result<Self::Transform, Self::InitError>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    type Future = Either<E::Future, D::Future>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    type Future = LocalBoxFuture<'static, Result<Self::Transform, Self::InitError>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    type Future = LocalBoxFuture<'static, Result<Self::Response, Self::Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    type Future = Ready<Result<Self::Transform, Self::InitError>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    type Future = LocalBoxFuture<'static, Result<Self::Response, Self::Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    type Future = Ready<Result<Self::Transform, Self::InitError>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    type Future = LoggerResponse<S, B>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    type Future = Ready<Result<Self::Transform, Self::InitError>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^    type Future = Ready<Result<Self::Transform, Self::InitError>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^    type Future = S::Future;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    type Future = Ready<Result<Self, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    type Future = CreateResourceService;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    type Future = Either<$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    type Future = CustomResponderFut<T>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    type Future = EitherFuture<$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    type Future = EitherFuture<T::Future, Ready<Result<Response, T::Error>>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    type Future = EitherResponder<A, B>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    type Future = Ready<Result<Response, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    type Future: Future<Output = Result<Response, Self::Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    type Future = CreateRouteService;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    type Future = LocalBoxFuture<'static, Result<Self::Response, Self::Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    type Future = LocalBoxFuture<'static, Result<Self::Service, Self::InitError>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    type Future = Either<BoxedResponse, Ready<Result<Self::Response, Self::Error>>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    type Future = ScopeFactoryResponse;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    type Future = LocalBoxFuture<'static, Result<Self, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    type Future = Ready<Result<Response, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    type Future = LocalBoxFuture<'static, Result<Self, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    type Future = Ready<Result<Response, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    type Future = Ready<Result<Self, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    type Future = Either<$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    type Future = Ready<Result<Payload, Error>>;$/;"	T
+Future	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    type Future = Ready<Result<Self, Error>>;$/;"	T
+Get	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Get() -> MethodGuard {$/;"	f
+Guard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub trait Guard {$/;"	t
+Guards	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^type Guards = Vec<Box<dyn Guard>>;$/;"	T
+Guards	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^type Guards = Vec<Box<dyn Guard>>;$/;"	T
+Guards	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^type Guards = Vec<Box<dyn Guard>>;$/;"	T
+H11	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^        const H11: &[u8] = b"\\x08http\/1.1";$/;"	c
+H2	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^        const H2: &[u8] = b"\\x02h2";$/;"	c
+Handler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^pub struct Handler<F, T, R, O>$/;"	s
+HandlerServiceResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^pub struct HandlerServiceResponse<T, R>$/;"	s
+Head	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Head() -> MethodGuard {$/;"	f
+Header	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Header(name: &'static str, value: &'static str) -> HeaderGuard {$/;"	f
+HeaderGuard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub struct HeaderGuard(header::HeaderName, header::HeaderValue);$/;"	s
+Host	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Host<H: AsRef<str>>(host: H) -> HostGuard {$/;"	f
+HostGuard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub struct HostGuard(String, Option<String>);$/;"	s
+HttpMessageBody	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^pub struct HttpMessageBody {$/;"	s
+HttpNewService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^type HttpNewService = BoxServiceFactory<(), ServiceRequest, ServiceResponse, Error, ()>;$/;"	T
+HttpNewService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^type HttpNewService = BoxServiceFactory<(), ServiceRequest, ServiceResponse, Error, ()>;$/;"	T
+HttpNewService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^type HttpNewService = BoxServiceFactory<(), ServiceRequest, ServiceResponse, Error, ()>;$/;"	T
+HttpNewService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^type HttpNewService =$/;"	T
+HttpNewService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^type HttpNewService = BoxServiceFactory<(), ServiceRequest, ServiceResponse, Error, ()>;$/;"	T
+HttpNewService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^type HttpNewService = BoxServiceFactory<(), ServiceRequest, ServiceResponse, Error, ()>;$/;"	T
+HttpRange	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/range.rs	/^pub struct HttpRange {$/;"	s
+HttpRequest	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^pub struct HttpRequest(pub(crate) Rc<HttpRequestInner>);$/;"	s
+HttpServer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^pub struct HttpServer<F, I, S, B>$/;"	s
+HttpService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^type HttpService = BoxService<ServiceRequest, ServiceResponse, Error>;$/;"	T
+HttpService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^type HttpService = BoxService<ServiceRequest, ServiceResponse, Error>;$/;"	T
+HttpService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^type HttpService = BoxService<ServiceRequest, ServiceResponse, Error>;$/;"	T
+HttpService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^type HttpService = BoxService<ServiceRequest, ServiceResponse, Error>;$/;"	T
+HttpServiceFactory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^pub trait HttpServiceFactory {$/;"	t
+HttpServiceFut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^type HttpServiceFut = LocalBoxFuture<'static, Result<HttpService, ()>>;$/;"	T
+HttpServiceFut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^type HttpServiceFut = LocalBoxFuture<'static, Result<HttpService, ()>>;$/;"	T
+HttpVer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^enum HttpVer {$/;"	g
+IO_STATUS_BLOCK	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/windows.rs	/^pub struct IO_STATUS_BLOCK {$/;"	s
+Id	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    struct Id {$/;"	s
+Info	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    struct Info {$/;"	s
+Info	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    struct Info {$/;"	s
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type InitError = ();$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type InitError = ();$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type InitError = T::InitError;$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type InitError = ();$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    type InitError = ();$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    type InitError = T::InitError;$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    type InitError = ();$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    type InitError = ();$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    type InitError = ();$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^    type InitError = ();$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    type InitError = ();$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    type InitError = ();$/;"	T
+InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    type InitError = ();$/;"	T
+Inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^struct Inner {$/;"	s
+Inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^struct Inner {$/;"	s
+Item	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Item = Result<Bytes, Error>;$/;"	T
+Item	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    type Item = Result<Bytes, PayloadError>;$/;"	T
+Item	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/readlines.rs	/^    type Item = Result<String, ReadlinesError>;$/;"	T
+Json	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^pub struct Json<T>(pub T);$/;"	s
+JsonBody	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^pub struct JsonBody<U> {$/;"	s
+JsonConfig	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^pub struct JsonConfig {$/;"	s
+JsonPayloadError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^pub enum JsonPayloadError {$/;"	g
+LAST_MD	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^        const LAST_MD = 0b0000_0010;$/;"	c
+ListenFd	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/manager.rs	/^pub struct ListenFd {$/;"	s
+Logger	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^pub struct Logger(Rc<Inner>);$/;"	s
+LoggerMiddleware	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^pub struct LoggerMiddleware<S> {$/;"	s
+LoggerResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^pub struct LoggerResponse<S, B>$/;"	s
+Method	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Method(method: http::Method) -> MethodGuard {$/;"	f
+MethodGuard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub struct MethodGuard(http::Method);$/;"	s
+MimeOverride	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^type MimeOverride = dyn Fn(&mime::Name) -> DispositionType;$/;"	T
+MyActor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^        struct MyActor;$/;"	s
+MyObject	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    struct MyObject {$/;"	s
+MyObject	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    struct MyObject {$/;"	s
+MyStruct	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    struct MyStruct {$/;"	s
+NO_PARAMS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^        const NO_PARAMS: [&str; 0] = [];$/;"	c
+NamedFile	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^pub struct NamedFile {$/;"	s
+NormalizePath	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^pub struct NormalizePath;$/;"	s
+NormalizePathNormalization	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^pub struct NormalizePathNormalization<S> {$/;"	s
+Not	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Not<F: Guard + 'static>(guard: F) -> NotGuard {$/;"	f
+NotGuard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub struct NotGuard(Box<dyn Guard>);$/;"	s
+NtSetInformationFile	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/windows.rs	/^    fn NtSetInformationFile($/;"	f
+Num	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^        struct Num(usize);$/;"	s
+Options	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Options() -> MethodGuard {$/;"	f
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    type Output = ();$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Output = Result<AppInitService<T::Service, B>, ()>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Output = Result<AppRouting, ()>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^        type Output = Result<($($T,)+), Error>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Output = Result<ServiceResponse, (Error, ServiceRequest)>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Output = Result<ServiceResponse, Infallible>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    type Output = Result<ServiceResponse<Encoder<B>>, Error>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    type Output = Result<ServiceResponse<StreamLog<B>>, Error>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    type Output = Result<ResourceService, ()>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    type Output = Result<Response, Error>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    type Output = Result<Response, T::Error>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    type Output = Result<RouteService, ()>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    type Output = Result<ScopeService, ()>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    type Output = Result<U, UrlencodedError>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    type Output = Result<U, JsonPayloadError>;$/;"	T
+Output	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    type Output = Result<Bytes, PayloadError>;$/;"	T
+PREFIX	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/range.rs	/^static PREFIX: &str = "bytes=";$/;"	c
+PREFIX_LEN	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/range.rs	/^const PREFIX_LEN: usize = 6;$/;"	c
+Patch	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Patch() -> MethodGuard {$/;"	f
+Path	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^pub struct Path<T> {$/;"	s
+PathBufWrp	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^struct PathBufWrp(PathBuf);$/;"	s
+PathConfig	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^pub struct PathConfig {$/;"	s
+PathError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^pub enum PathError {$/;"	g
+Payload	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^pub struct Payload(pub crate::dev::Payload);$/;"	s
+PayloadConfig	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^pub struct PayloadConfig {$/;"	s
+Person	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub struct Person {$/;"	s
+PictionaryModel	/Users/bspaulding/Documents/Code/pictionary/backend/src/main.rs	/^struct PictionaryModel {$/;"	s
+Point	/Users/bspaulding/Documents/Code/pictionary/backend/src/main.rs	/^struct Point {$/;"	s
+Post	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Post() -> MethodGuard {$/;"	f
+Put	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Put() -> MethodGuard {$/;"	f
+Q	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    static Q: RefCell<Vec<Pin<Box<dyn Future<Output = ()>>>>> = RefCell::new(Vec::new());$/;"	c
+Query	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^pub struct Query<T>(pub T);$/;"	s
+QueryConfig	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^pub struct QueryConfig {$/;"	s
+QueryPayloadError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^pub enum QueryPayloadError {$/;"	g
+RUNNING	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    static RUNNING: Cell<bool> = Cell::new(false);$/;"	c
+Readlines	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/readlines.rs	/^pub struct Readlines<T: HttpMessage> {$/;"	s
+ReadlinesError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^pub enum ReadlinesError {$/;"	g
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Request = ServiceRequest;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Request = Request;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Request = ServiceRequest;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Request = (T, HttpRequest);$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Request = ServiceRequest;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    type Request = ServiceRequest;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    type Request = E::Request;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    type Request = S::Request;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    type Request = ServiceRequest;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    type Request = ServiceRequest;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    type Request = ServiceRequest;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^    type Request = ServiceRequest;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    type Request = ServiceRequest;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    type Request = ServiceRequest;$/;"	T
+Request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    type Request = ServiceRequest;$/;"	T
+Resource	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^pub struct Resource<T = ResourceEndpoint> {$/;"	s
+ResourceEndpoint	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^pub struct ResourceEndpoint {$/;"	s
+ResourceFactory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^pub struct ResourceFactory {$/;"	s
+ResourceMap	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/rmap.rs	/^pub struct ResourceMap {$/;"	s
+ResourceService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^pub struct ResourceService {$/;"	s
+Responder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^pub trait Responder {$/;"	t
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Response = ServiceResponse;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Response = ServiceResponse;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Response = ServiceResponse<B>;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Response = ServiceResponse;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    type Response = ServiceResponse<Encoder<B>>;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    type Response = E::Response;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    type Response = S::Response;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    type Response = ServiceResponse<B>;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    type Response = ServiceResponse<B>;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    type Response = ServiceResponse<StreamLog<B>>;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^    type Response = ServiceResponse<B>;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    type Response = ServiceResponse;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    type Response = ServiceResponse;$/;"	T
+Response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    type Response = ServiceResponse;$/;"	T
+ResponseFuture	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^pub struct ResponseFuture<T, E> {$/;"	s
+Result	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^            type Result = usize;$/;"	T
+Route	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^pub struct Route {$/;"	s
+RouteFuture	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^type RouteFuture = LocalBoxFuture<$/;"	T
+RouteNewService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^struct RouteNewService<T>$/;"	s
+RouteService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^pub struct RouteService {$/;"	s
+RouteServiceWrapper	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^struct RouteServiceWrapper<T: Service> {$/;"	s
+Runtime	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/runtime.rs	/^pub struct Runtime {$/;"	s
+STORAGE	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    static STORAGE: RefCell<HashMap<TypeId, Box<dyn Any>>> = RefCell::new(HashMap::new());$/;"	c
+SYSTEM_COUNT	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^static SYSTEM_COUNT: AtomicUsize = AtomicUsize::new(0);$/;"	c
+Scope	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^pub struct Scope<T = ScopeEndpoint> {$/;"	s
+ScopeEndpoint	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^pub struct ScopeEndpoint {$/;"	s
+ScopeFactory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^pub struct ScopeFactory {$/;"	s
+ScopeFactoryResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^pub struct ScopeFactoryResponse {$/;"	s
+ScopeService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^pub struct ScopeService {$/;"	s
+Service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Service = FilesService;$/;"	T
+Service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Service = AppInitService<T::Service, B>;$/;"	T
+Service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    type Service = AppRouting;$/;"	T
+Service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    type Service = ExtractService<T, S>;$/;"	T
+Service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    type Service = ResourceService;$/;"	T
+Service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    type Service = BoxedRouteService<ServiceRequest, Self::Response>;$/;"	T
+Service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    type Service = RouteService;$/;"	T
+Service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    type Service = ScopeService;$/;"	T
+ServiceConfig	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^pub struct ServiceConfig {$/;"	s
+ServiceRequest	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^pub struct ServiceRequest(HttpRequest);$/;"	s
+ServiceResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^pub struct ServiceResponse<B = Body> {$/;"	s
+Socket	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^struct Socket {$/;"	s
+Stream	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    type Stream = ();$/;"	T
+Stream	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    type Stream = PayloadStream;$/;"	T
+StreamLog	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^pub struct StreamLog<B> {$/;"	s
+StreamType	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^enum StreamType {$/;"	g
+System	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^pub struct System {$/;"	s
+SystemRunner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/builder.rs	/^pub struct SystemRunner {$/;"	s
+T	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/range.rs	/^    struct T(&'static str, u64, Vec<HttpRange>);$/;"	s
+Target	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    type Target = File;$/;"	T
+Target	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    type Target = Arc<T>;$/;"	T
+Target	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    type Target = T;$/;"	T
+Target	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    type Target = T;$/;"	T
+Target	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    type Target = T;$/;"	T
+Target	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    type Target = T;$/;"	T
+Test2	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    struct Test2 {$/;"	s
+TestData	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^        struct TestData(Arc<AtomicUsize>);$/;"	s
+TestRequest	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^pub struct TestRequest {$/;"	s
+TestServer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^pub struct TestServer {$/;"	s
+TestServerConfig	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^pub struct TestServerConfig {$/;"	s
+Trace	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn Trace() -> MethodGuard {$/;"	f
+Tracker	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^        struct Tracker {$/;"	s
+Transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    type Transform = CompressMiddleware<S>;$/;"	T
+Transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    type Transform = ConditionMiddleware<T::Transform, S>;$/;"	T
+Transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    type Transform = DefaultHeadersMiddleware<S>;$/;"	T
+Transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    type Transform = ErrorHandlersMiddleware<S, B>;$/;"	T
+Transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    type Transform = LoggerMiddleware<S>;$/;"	T
+Transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^    type Transform = NormalizePathNormalization<S>;$/;"	T
+URI	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^        const URI: &str = "\/v1\/something\/";$/;"	c
+UriSegmentError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/error.rs	/^pub enum UriSegmentError {$/;"	g
+UrlEncoded	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^pub struct UrlEncoded<U> {$/;"	s
+UrlGenerationError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^pub enum UrlGenerationError {$/;"	g
+UrlencodedError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^pub enum UrlencodedError {$/;"	g
+WebService	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^pub struct WebService {$/;"	s
+WebServiceImpl	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^struct WebServiceImpl<T> {$/;"	s
+X_FORWARDED_FOR	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^const X_FORWARDED_FOR: &[u8] = b"x-forwarded-for";$/;"	c
+X_FORWARDED_HOST	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^const X_FORWARDED_HOST: &[u8] = b"x-forwarded-host";$/;"	c
+X_FORWARDED_PROTO	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^const X_FORWARDED_PROTO: &[u8] = b"x-forwarded-proto";$/;"	c
+add	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/rmap.rs	/^    pub fn add(&mut self, pattern: &mut ResourceDef, nested: Option<Rc<ResourceMap>>) {$/;"	f
+addr	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn addr(&self) -> net::SocketAddr {$/;"	f
+addrs	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn addrs(&self) -> Vec<net::SocketAddr> {$/;"	f
+addrs_with_scheme	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn addrs_with_scheme(&self) -> Vec<(net::SocketAddr, &str)> {$/;"	f
+all_attachment	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^        fn all_attachment(_: &mime::Name) -> DispositionType {$/;"	f
+and	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    pub fn and<F: Guard + 'static>(mut self, guard: F) -> Self {$/;"	f
+any_match	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^fn any_match(etag: Option<&header::EntityTag>, req: &HttpRequest) -> bool {$/;"	f
+app_config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn app_config(&self) -> &AppConfig {$/;"	f
+app_config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn app_config(&self) -> &AppConfig {$/;"	f
+app_data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    pub fn app_data<U: 'static>(mut self, ext: U) -> Self {$/;"	f
+app_data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn app_data<T: 'static>(&self) -> Option<&T> {$/;"	f
+app_data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    pub fn app_data<U: 'static>(mut self, data: U) -> Self {$/;"	f
+app_data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    pub fn app_data<U: 'static>(mut self, data: U) -> Self {$/;"	f
+app_data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn app_data<T: 'static>(&self) -> Option<Data<T>> {$/;"	f
+app_data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn app_data<T: 'static>(mut self, data: T) -> Self {$/;"	f
+arbiter	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn arbiter(&self) -> &Arbiter {$/;"	f
+as_ref	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    fn as_ref(&self) -> &T {$/;"	f
+backlog	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn backlog(mut self, backlog: i32) -> Self {$/;"	f
+bin_ref	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^        fn bin_ref(&self) -> &[u8] {$/;"	f
+bin_ref	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^        fn bin_ref(&self) -> &[u8];$/;"	f
+bind	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn bind<A: net::ToSocketAddrs>(mut self, addr: A) -> io::Result<Self> {$/;"	f
+bind2	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    fn bind2<A: net::ToSocketAddrs>($/;"	f
+bind_openssl	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn bind_openssl<A>($/;"	f
+bind_rustls	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn bind_rustls<A: net::ToSocketAddrs>($/;"	f
+bind_uds	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn bind_uds<A>(mut self, addr: A) -> io::Result<Self>$/;"	f
+block_on	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/builder.rs	/^    pub fn block_on<F, O>(&mut self, fut: F) -> O$/;"	f
+block_on	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/runtime.rs	/^    pub fn block_on<F>(&mut self, f: F) -> F::Output$/;"	f
+body	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^        fn body(&self) -> &Body {$/;"	f
+body	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^        fn body(&self) -> &Body;$/;"	f
+build	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/builder.rs	/^    pub fn build(self) -> SystemRunner {$/;"	f
+builder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn builder() -> Builder {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    fn call(&mut self, req: ServiceRequest) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    fn call(&mut self, mut req: ServiceRequest) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    fn call(&mut self, req: Request) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^        fn call(&self, param: ($($T,)+)) -> Res {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    fn call(&mut self, (param, req): (T, HttpRequest)) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    fn call(&mut self, req: ServiceRequest) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    fn call(&self, _: ()) -> R {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    fn call(&self, param: T) -> R;$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    fn call(&mut self, req: ServiceRequest) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    fn call(&mut self, req: E::Request) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    fn call(&mut self, req: ServiceRequest) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    fn call(&mut self, req: ServiceRequest) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn call(&mut self, req: ServiceRequest) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^    fn call(&mut self, mut req: ServiceRequest) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    fn call(&mut self, mut req: ServiceRequest) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    fn call(&mut self, req: ServiceRequest) -> Self::Future {$/;"	f
+call	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    fn call(&mut self, mut req: ServiceRequest) -> Self::Future {$/;"	f
+call_box	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    fn call_box(self: Box<Self>) {$/;"	f
+call_box	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    fn call_box(self: Box<Self>);$/;"	f
+check	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn check(&self, head: &RequestHead) -> bool {$/;"	f
+check	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn check(&self, req: &RequestHead) -> bool {$/;"	f
+check	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn check(&self, request: &RequestHead) -> bool {$/;"	f
+check	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn check(&self, request: &RequestHead) -> bool;$/;"	f
+check	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    pub fn check(&self, req: &mut ServiceRequest) -> bool {$/;"	f
+check_mimetype	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    fn check_mimetype(&self, req: &HttpRequest) -> Result<(), Error> {$/;"	f
+checked_expr	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn checked_expr<F, E>(mut self, f: F) -> Self$/;"	f
+client_shutdown	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn client_shutdown(self, val: u64) -> Self {$/;"	f
+client_timeout	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn client_timeout(self, val: u64) -> Self {$/;"	f
+client_timeout	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn client_timeout(mut self, val: u64) -> Self {$/;"	f
+clone	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    fn clone(&self) -> Self {$/;"	f
+clone	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    fn clone(&self) -> Self {$/;"	f
+clone	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^            fn clone(&self) -> Self {$/;"	f
+clone	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    fn clone(&self) -> Data<T> {$/;"	f
+clone	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    fn clone(&self) -> Self {$/;"	f
+cmp	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    fn cmp(&self, other: &AcceptEncoding) -> cmp::Ordering {$/;"	f
+config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn config(&self) -> &AppConfig {$/;"	f
+config	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^pub fn config() -> TestServerConfig {$/;"	f
+configure	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    pub fn configure<F>(mut self, f: F) -> Self$/;"	f
+configure	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    fn configure<F>(f: F) -> Self::Config$/;"	f
+configure	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    pub fn configure<F>(mut self, f: F) -> Self$/;"	f
+connection_info	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn connection_info(&self) -> Ref<'_, ConnectionInfo> {$/;"	f
+connection_info	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn connection_info(&self) -> Ref<'_, ConnectionInfo> {$/;"	f
+contains_item	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn contains_item<T: 'static>() -> bool {$/;"	f
+content_type	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    pub fn content_type(mut self) -> Self {$/;"	f
+content_type	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    pub fn content_type<F>(mut self, predicate: F) -> Self$/;"	f
+cookie	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn cookie(mut self, cookie: Cookie<'_>) -> Self {$/;"	f
+create	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    fn create(&self, extensions: &mut Extensions) -> bool {$/;"	f
+create	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    fn create(&self, extensions: &mut Extensions) -> bool;$/;"	f
+create_async_runtime	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/builder.rs	/^    fn create_async_runtime(self, local: &LocalSet) -> AsyncSystemRunner {$/;"	f
+create_runtime	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/builder.rs	/^    fn create_runtime<F>(self, f: F) -> SystemRunner$/;"	f
+create_tcp_listener	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^fn create_tcp_listener($/;"	f
+current	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn current() -> Arbiter {$/;"	f
+current	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn current() -> System {$/;"	f
+data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    pub fn data<U: 'static>(mut self, data: U) -> Self {$/;"	f
+data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn data<S: 'static>(&mut self, data: S) -> &mut Self {$/;"	f
+data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    pub fn data<U: 'static>(self, data: U) -> Self {$/;"	f
+data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    pub fn data<U: 'static>(self, data: U) -> Self {$/;"	f
+data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn data<T: 'static>(mut self, data: T) -> Self {$/;"	f
+data_factory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    pub fn data_factory<F, Out, D, E>(mut self, data: F) -> Self$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    fn default() -> Self {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    fn default() -> Self {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    fn default() -> Self {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    fn default() -> Self {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    fn default() -> Self {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    fn default() -> Self {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn default() -> Format {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn default() -> Logger {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    fn default() -> Self {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    fn default() -> TestRequest {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    fn default() -> Self {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    fn default() -> Self {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    fn default() -> Self {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    fn default() -> Self {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    fn default() -> Self {$/;"	f
+default_handler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn default_handler<F, U>(mut self, f: F) -> Self$/;"	f
+default_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    pub fn default_service<F, U>(mut self, f: F) -> Self$/;"	f
+default_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn default_service(&self) -> Rc<HttpNewService> {$/;"	f
+default_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    pub fn default_service<F, U>(mut self, f: F) -> Self$/;"	f
+default_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    pub fn default_service<F, U>(mut self, f: F) -> Self$/;"	f
+default_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^pub fn default_service($/;"	f
+delete	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn delete() -> TestRequest {$/;"	f
+delete	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn delete<S: AsRef<str>>(&self, path: S) -> ClientRequest {$/;"	f
+delete	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn delete() -> Route {$/;"	f
+deref	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    fn deref(&self) -> &File {$/;"	f
+deref	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    fn deref(&self) -> &Arc<T> {$/;"	f
+deref	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    fn deref(&self) -> &T {$/;"	f
+deref	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    fn deref(&self) -> &T {$/;"	f
+deref	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    fn deref(&self) -> &T {$/;"	f
+deref	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    fn deref(&self) -> &T {$/;"	f
+deref_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    fn deref_mut(&mut self) -> &mut File {$/;"	f
+deref_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    fn deref_mut(&mut self) -> &mut T {$/;"	f
+deref_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    fn deref_mut(&mut self) -> &mut T {$/;"	f
+deref_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    fn deref_mut(&mut self) -> &mut T {$/;"	f
+deref_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    fn deref_mut(&mut self) -> &mut T {$/;"	f
+detach_from_iocp	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/windows.rs	/^unsafe fn detach_from_iocp(sock: FdType) {$/;"	f
+directory_listing	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^fn directory_listing($/;"	f
+disable_content_disposition	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn disable_content_disposition(mut self) -> Self {$/;"	f
+disable_content_disposition	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn disable_content_disposition(mut self) -> Self {$/;"	f
+disable_signals	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn disable_signals(mut self) -> Self {$/;"	f
+drop	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    fn drop(&mut self) {$/;"	f
+drop	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^        fn drop(&mut self) {$/;"	f
+drop	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    fn drop(&mut self) {$/;"	f
+drop	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^            fn drop(&mut self) {$/;"	f
+drop	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn drop(&mut self) {$/;"	f
+drop	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^            fn drop(&mut self) {$/;"	f
+drop	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn drop(&mut self) {$/;"	f
+drop	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    fn drop(&mut self) {$/;"	f
+empty	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/manager.rs	/^    pub fn empty() -> ListenFd {$/;"	f
+encode_file_name	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^macro_rules! encode_file_name {$/;"	d
+encode_file_url	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^macro_rules! encode_file_url {$/;"	d
+encoding	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/lib.rs	/^        fn encoding(&mut self, encoding: ContentEncoding) -> &mut Self {$/;"	f
+encoding	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/lib.rs	/^        fn encoding(&mut self, encoding: ContentEncoding) -> &mut Self;$/;"	f
+eq	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    fn eq(&self, other: &AcceptEncoding) -> bool {$/;"	f
+eq	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    fn eq(err: UrlencodedError, other: UrlencodedError) -> bool {$/;"	f
+err	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    fn err(e: UrlencodedError) -> Self {$/;"	f
+err	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    fn err(e: PayloadError) -> Self {$/;"	f
+err	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/readlines.rs	/^    fn err(err: ReadlinesError) -> Self {$/;"	f
+error_handler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    pub fn error_handler<F>(mut self, f: F) -> Self$/;"	f
+error_handler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    pub fn error_handler<F>(mut self, f: F) -> Self$/;"	f
+error_handler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    pub fn error_handler<F>(mut self, f: F) -> Self$/;"	f
+error_handler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    pub fn error_handler<F>(mut self, f: F) -> Self$/;"	f
+error_response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/error.rs	/^    fn error_response(&self) -> HttpResponse {$/;"	f
+error_response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^    fn error_response(&self) -> HttpResponse {$/;"	f
+error_response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn error_response<B, E: Into<Error>>(self, err: E) -> ServiceResponse<B> {$/;"	f
+error_response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn error_response<E: Into<Error>>(self, err: E) -> Self {$/;"	f
+exclude	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    pub fn exclude<T: Into<String>>(mut self, path: T) -> Self {$/;"	f
+exec	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn exec<F, R>(&self, f: F) -> impl Future<Output = Result<R, Canceled>>$/;"	f
+exec_fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn exec_fn<F>(&self, f: F)$/;"	f
+extensions	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn extensions(&self) -> Ref<'_, Extensions> {$/;"	f
+extensions	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn extensions(&self) -> Ref<'_, Extensions> {$/;"	f
+extensions	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn extensions(&self) -> Ref<'_, Extensions> {$/;"	f
+extensions_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn extensions_mut(&self) -> RefMut<'_, Extensions> {$/;"	f
+extensions_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn extensions_mut(&self) -> RefMut<'_, Extensions> {$/;"	f
+extensions_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn extensions_mut(&self) -> RefMut<'_, Extensions> {$/;"	f
+external_resource	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    pub fn external_resource<N, U>(mut self, name: N, url: U) -> Self$/;"	f
+external_resource	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn external_resource<N, U>(&mut self, name: N, url: U) -> &mut Self$/;"	f
+extract	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    fn extract(req: &HttpRequest) -> Self::Future {$/;"	f
+factory_tuple	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^macro_rules! factory_tuple ({ $(($n:tt, $T:ident)),+} => {$/;"	d
+file	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn file(&self) -> &File {$/;"	f
+file_extension_to_mime	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^pub fn file_extension_to_mime(ext: &str) -> mime::Mime {$/;"	f
+files_listing_renderer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn files_listing_renderer<F>(mut self, f: F) -> Self$/;"	f
+fill_root	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/rmap.rs	/^    fn fill_root<U, I>($/;"	f
+finish	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn finish<T, F>(self, service: F) -> impl HttpServiceFactory$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn fmt(&self, fmt: &mut Formatter<'_>) -> Result<(), fmt::Error> {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fn_guard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn fn_guard<F>(f: F) -> impl Guard$/;"	f
+from	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    fn from(inner: T) -> Path<T> {$/;"	f
+from_env	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/manager.rs	/^    pub fn from_env() -> ListenFd {$/;"	f
+from_err	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn from_err<E: Into<Error>>(err: E, request: HttpRequest) -> Self {$/;"	f
+from_file	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn from_file<P: AsRef<Path>>(file: File, path: P) -> io::Result<NamedFile> {$/;"	f
+from_parts	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn from_parts($/;"	f
+from_query	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    pub fn from_query(query_str: &str) -> Result<Self, QueryPayloadError>$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    fn from_request(req: &HttpRequest, _: &mut Payload) -> Self::Future {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    fn from_request(req: &HttpRequest, _: &mut Payload) -> Self::Future {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^        fn from_request(req: &HttpRequest, payload: &mut Payload) -> Self::Future {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    fn from_request(_: &HttpRequest, _: &mut Payload) -> Self::Future {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    fn from_request(req: &HttpRequest, payload: &mut Payload) -> Self::Future {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^    fn from_request(req: &HttpRequest, payload: &mut Payload) -> Self::Future;$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn from_request(req: &HttpRequest, _: &mut Payload) -> Self::Future {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn from_request(req: HttpRequest) -> Result<Self, HttpRequest> {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    fn from_request(req: &HttpRequest, payload: &mut Payload) -> Self::Future {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    fn from_request(req: &HttpRequest, payload: &mut Payload) -> Self::Future {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    fn from_request(req: &HttpRequest, _: &mut Payload) -> Self::Future {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    fn from_request(_: &HttpRequest, payload: &mut dev::Payload) -> Self::Future {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    fn from_request(req: &HttpRequest, payload: &mut dev::Payload) -> Self::Future {$/;"	f
+from_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    fn from_request(req: &HttpRequest, _: &mut Payload) -> Self::Future {$/;"	f
+get	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^    pub fn get<'a>(req: &'a RequestHead, cfg: &AppConfig) -> Ref<'a, Self> {$/;"	f
+get	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn get() -> TestRequest {$/;"	f
+get	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn get<S: AsRef<str>>(&self, path: S) -> ClientRequest {$/;"	f
+get	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn get() -> Route {$/;"	f
+get_encoding	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/lib.rs	/^        fn get_encoding(&self) -> Option<ContentEncoding> {$/;"	f
+get_encoding	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/lib.rs	/^        fn get_encoding(&self) -> Option<ContentEncoding>;$/;"	f
+get_fds	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/unix.rs	/^pub fn get_fds() -> Option<Vec<FdType>> {$/;"	f
+get_fds	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/windows.rs	/^pub fn get_fds() -> Option<Vec<FdType>> {$/;"	f
+get_host_uri	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^fn get_host_uri(req: &RequestHead) -> Option<Uri> {$/;"	f
+get_item	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn get_item<T: 'static, F, R>(mut f: F) -> R$/;"	f
+get_mut_item	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn get_mut_item<T: 'static, F, R>(mut f: F) -> R$/;"	f
+get_pathbuf	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    fn get_pathbuf(path: &str) -> Result<Self, UriSegmentError> {$/;"	f
+get_ref	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    pub fn get_ref(&self) -> &T {$/;"	f
+guard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    pub fn guard<G: Guard + 'static>(mut self, guard: G) -> Self {$/;"	f
+guard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    pub fn guard<F: Guard + 'static>(mut self, f: F) -> Self {$/;"	f
+guard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    pub fn guard<G: Guard + 'static>(mut self, guard: G) -> Self {$/;"	f
+guard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn guard<G: Guard + 'static>(mut self, guard: G) -> Self {$/;"	f
+h1	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn h1(mut self) -> Self {$/;"	f
+h2	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn h2(mut self) -> Self {$/;"	f
+handle	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^            fn handle(&mut self, msg: Num, _: &mut Self::Context) -> Self::Result {$/;"	f
+handle_err	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    fn handle_err($/;"	f
+handle_error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^fn handle_error(err: BlockingError<io::Error>) -> Error {$/;"	f
+handler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    pub fn handler<F>(mut self, status: StatusCode, handler: F) -> Self$/;"	f
+has_resource	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/rmap.rs	/^    pub fn has_resource(&self, path: &str) -> bool {$/;"	f
+head	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn head(&self) -> &RequestHead {$/;"	f
+head	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn head(&self) -> &RequestHead {$/;"	f
+head	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn head<S: AsRef<str>>(&self, path: S) -> ClientRequest {$/;"	f
+head	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn head() -> Route {$/;"	f
+head_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn head_mut(&mut self) -> &mut RequestHead {$/;"	f
+header	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    pub fn header<K, V>(mut self, key: K, value: V) -> Self$/;"	f
+header	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn header<K, V>(mut self, key: K, value: V) -> Self$/;"	f
+headers	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn headers(&self) -> &HeaderMap {$/;"	f
+headers	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn headers(&self) -> &HeaderMap {$/;"	f
+headers	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn headers(&self) -> &HeaderMap {$/;"	f
+headers	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn headers(&self) -> &HeaderMap {$/;"	f
+headers_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn headers_mut(&mut self) -> &mut HeaderMap {$/;"	f
+host	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn host(&self) -> &str {$/;"	f
+host	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^    pub fn host(&self) -> &str {$/;"	f
+id	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn id(&self) -> usize {$/;"	f
+index_file	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn index_file<T: Into<String>>(mut self, index: T) -> Self {$/;"	f
+into	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn into(self) -> Response<B> {$/;"	f
+into_factory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    fn into_factory(self) -> AppInit<T, B> {$/;"	f
+into_factory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    fn into_factory(self) -> T {$/;"	f
+into_inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    pub fn into_inner(self) -> Arc<T> {$/;"	f
+into_inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    pub fn into_inner(self) -> T {$/;"	f
+into_inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    pub fn into_inner(self) -> T {$/;"	f
+into_inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/path.rs	/^    pub fn into_inner(self) -> T {$/;"	f
+into_inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    pub fn into_inner(self) -> crate::dev::Payload {$/;"	f
+into_inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/query.rs	/^    pub fn into_inner(self) -> T {$/;"	f
+into_parts	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn into_parts(mut self) -> (HttpRequest, Payload) {$/;"	f
+into_response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn into_response(self, req: &HttpRequest) -> Result<HttpResponse, Error> {$/;"	f
+into_response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn into_response<B, R: Into<Response<B>>>(self, res: R) -> ServiceResponse<B> {$/;"	f
+into_response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn into_response<B1>(self, response: Response<B1>) -> ServiceResponse<B1> {$/;"	f
+is_root	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn is_root(&self) -> bool {$/;"	f
+is_sock	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/unix.rs	/^fn is_sock(fd: FdType) -> bool {$/;"	f
+is_visible	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn is_visible(&self, entry: &io::Result<DirEntry>) -> bool {$/;"	f
+join	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn join(&mut self) -> thread::Result<()> {$/;"	f
+json_eq	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    fn json_eq(err: JsonPayloadError, other: JsonPayloadError) -> bool {$/;"	f
+keep_alive	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn keep_alive<T: Into<KeepAlive>>(self, val: T) -> Self {$/;"	f
+len	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/manager.rs	/^    pub fn len(&self) -> usize {$/;"	f
+limit	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    pub fn limit(mut self, limit: usize) -> Self {$/;"	f
+limit	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    pub fn limit(mut self, limit: usize) -> Self {$/;"	f
+limit	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    pub fn limit(mut self, limit: usize) -> Self {$/;"	f
+limit	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/readlines.rs	/^    pub fn limit(mut self, limit: usize) -> Self {$/;"	f
+listen	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn listen(mut self, lst: net::TcpListener) -> io::Result<Self> {$/;"	f
+listen_openssl	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn listen_openssl($/;"	f
+listen_rustls	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn listen_rustls($/;"	f
+listen_rustls_inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    fn listen_rustls_inner($/;"	f
+listen_ssl_inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    fn listen_ssl_inner($/;"	f
+listen_uds	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn listen_uds($/;"	f
+local_addr	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn local_addr(&self) -> SocketAddr {$/;"	f
+make_tcp_listener	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/unix.rs	/^pub fn make_tcp_listener(fd: FdType) -> io::Result<TcpListener> {$/;"	f
+make_tcp_listener	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/windows.rs	/^pub fn make_tcp_listener(fd: FdType) -> io::Result<TcpListener> {$/;"	f
+make_udp_socket	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/unix.rs	/^pub fn make_udp_socket(fd: FdType) -> io::Result<UdpSocket> {$/;"	f
+make_udp_socket	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/windows.rs	/^pub fn make_udp_socket(fd: FdType) -> io::Result<UdpSocket> {$/;"	f
+make_unix_listener	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/unix.rs	/^pub fn make_unix_listener(fd: FdType) -> io::Result<UnixListener> {$/;"	f
+map_body	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn map_body<F, B2>(self, f: F) -> ServiceResponse<B2>$/;"	f
+match_info	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn match_info(&self) -> &Path<Url> {$/;"	f
+match_info	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn match_info(&self) -> &Path<Url> {$/;"	f
+match_info_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn match_info_mut(&mut self) -> &mut Path<Url> {$/;"	f
+maxconn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn maxconn(mut self, num: usize) -> Self {$/;"	f
+maxconnrate	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn maxconnrate(self, num: usize) -> Self {$/;"	f
+method	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn method(&self) -> &Method {$/;"	f
+method	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    pub fn method(mut self, method: Method) -> Self {$/;"	f
+method	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn method(&self) -> &Method {$/;"	f
+method	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn method(mut self, meth: Method) -> Self {$/;"	f
+method	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn method(method: Method) -> Route {$/;"	f
+mime_override	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn mime_override<F>(mut self, f: F) -> Self$/;"	f
+mimetype	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    pub fn mimetype(mut self, mt: Mime) -> Self {$/;"	f
+name	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/builder.rs	/^    pub fn name<T: Into<String>>(mut self, name: T) -> Self {$/;"	f
+name	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    pub fn name(mut self, name: &str) -> Self {$/;"	f
+name	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn name(mut self, name: &str) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn new(base: PathBuf, path: PathBuf) -> Directory {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn new<T: Into<PathBuf>>(path: &str, dir: T) -> Files {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn new() -> Arbiter {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/runtime.rs	/^    pub fn new() -> io::Result<Runtime> {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn new<T: Into<String>>(name: T) -> SystemRunner {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    pub fn new() -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    pub fn new(factory: Rc<RefCell<Option<AppRoutingFactory>>>) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^            fn new(inner: Arc<AtomicUsize>) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/data.rs	/^    pub fn new(state: T) -> Data<T> {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    pub fn new(hnd: F) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    pub fn new(service: S) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^    fn new(req: &RequestHead, cfg: &AppConfig) -> ConnectionInfo {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    fn new(tag: &str) -> Option<AcceptEncoding> {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    pub fn new(encoding: ContentEncoding) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    pub fn new(enable: bool, trans: T) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    pub fn new() -> DefaultHeaders {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    pub fn new() -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    pub fn new(format: &str) -> Logger {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    pub fn new(s: &str) -> Format {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    fn new(factory: Rc<RefCell<Option<ResourceFactory>>>) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    pub fn new<T: IntoPattern>(path: T) -> Resource {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    fn new(responder: T) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    pub fn new(fut: T) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/rmap.rs	/^    pub fn new(root: ResourceDef) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    pub fn new() -> Route {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    pub fn new(service: T) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    fn new(factory: Rc<RefCell<Option<ScopeFactory>>>) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    pub fn new(path: &str) -> Scope {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn new(factory: F) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn new(factory: T) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn new(request: HttpRequest, response: Response<B>) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn new<T: IntoPattern>(path: T) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    pub fn new(req: &HttpRequest, payload: &mut Payload) -> UrlEncoded<U> {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    pub fn new($/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    pub fn new(limit: usize) -> Self {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    pub fn new(req: &HttpRequest, payload: &mut dev::Payload) -> HttpMessageBody {$/;"	f
+new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/readlines.rs	/^    pub fn new(req: &mut T) -> Self {$/;"	f
+new_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    fn new_service(&self, _: ()) -> Self::Future {$/;"	f
+new_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    fn new_service(&self, _: ()) -> Self::Future {$/;"	f
+new_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    fn new_service(&self, config: AppConfig) -> Self::Future {$/;"	f
+new_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    fn new_service(&self, _: ()) -> Self::Future {$/;"	f
+new_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    fn new_service(&self, _: ()) -> Self::Future {$/;"	f
+new_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    fn new_service(&self, _: ()) -> Self::Future {$/;"	f
+new_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    fn new_service(&self, _: ()) -> Self::Future {$/;"	f
+new_transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    fn new_transform(&self, service: S) -> Self::Future {$/;"	f
+new_transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    fn new_transform(&self, service: S) -> Self::Future {$/;"	f
+new_transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    fn new_transform(&self, service: S) -> Self::Future {$/;"	f
+new_transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    fn new_transform(&self, service: S) -> Self::Future {$/;"	f
+new_transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn new_transform(&self, service: S) -> Self::Future {$/;"	f
+new_transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^    fn new_transform(&self, service: S) -> Self::Future {$/;"	f
+none_match	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^fn none_match(etag: Option<&header::EntityTag>, req: &HttpRequest) -> bool {$/;"	f
+ok_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^pub fn ok_service($/;"	f
+open	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn open<P: AsRef<Path>>(path: P) -> io::Result<NamedFile> {$/;"	f
+openssl	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn openssl(mut self, acceptor: open_ssl::ssl::SslAcceptor) -> Self {$/;"	f
+openssl_acceptor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^fn openssl_acceptor(mut builder: SslAcceptorBuilder) -> io::Result<SslAcceptor> {$/;"	f
+options	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn options<S: AsRef<str>>(&self, path: S) -> ClientRequest {$/;"	f
+or	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    pub fn or<F: Guard + 'static>(mut self, guard: F) -> Self {$/;"	f
+param	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn param(mut self, name: &'static str, value: &'static str) -> Self {$/;"	f
+parent_pattern_for	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/rmap.rs	/^    fn parent_pattern_for<U, I>($/;"	f
+parse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/range.rs	/^    pub fn parse(header: &str, size: u64) -> Result<Vec<HttpRange>, ()> {$/;"	f
+parse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    pub fn parse(raw: &str, encoding: ContentEncoding) -> ContentEncoding {$/;"	f
+partial_cmp	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    fn partial_cmp(&self, other: &AcceptEncoding) -> Option<cmp::Ordering> {$/;"	f
+patch	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn patch() -> TestRequest {$/;"	f
+patch	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn patch<S: AsRef<str>>(&self, path: S) -> ClientRequest {$/;"	f
+patch	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn patch() -> Route {$/;"	f
+path	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn path(&self) -> &Path {$/;"	f
+path	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn path(&self) -> &str {$/;"	f
+path	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn path(&self) -> &str {$/;"	f
+pattern_for	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/rmap.rs	/^    fn pattern_for<U, I>($/;"	f
+patterns_for	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/rmap.rs	/^    fn patterns_for<U, I>($/;"	f
+peer_addr	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn peer_addr(&self) -> Option<net::SocketAddr> {$/;"	f
+peer_addr	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn peer_addr(&self) -> Option<net::SocketAddr> {$/;"	f
+peer_addr	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn peer_addr(mut self, addr: SocketAddr) -> Self {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    fn poll(mut self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    fn poll(mut self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^        fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    fn poll(mut self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    fn poll(mut self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    fn poll(mut self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    fn poll(mut self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    fn poll(mut self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    fn poll(mut self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output> {$/;"	f
+poll_next	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    fn poll_next($/;"	f
+poll_next	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn poll_next(&mut self, cx: &mut Context<'_>) -> Poll<Option<Result<Bytes, Error>>> {$/;"	f
+poll_next	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    fn poll_next($/;"	f
+poll_next	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/readlines.rs	/^    fn poll_next($/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    fn poll_ready(&mut self, _: &mut Context) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    fn poll_ready(&mut self, _: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^    fn poll_ready(&mut self, cx: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^    fn poll_ready(&mut self, _: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/compress.rs	/^    fn poll_ready(&mut self, cx: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    fn poll_ready(&mut self, cx: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^    fn poll_ready(&mut self, cx: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    fn poll_ready(&mut self, cx: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn poll_ready(&mut self, cx: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^    fn poll_ready(&mut self, cx: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    fn poll_ready(&mut self, _: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    fn poll_ready(&mut self, cx: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+poll_ready	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    fn poll_ready(&mut self, _: &mut Context<'_>) -> Poll<Result<(), Self::Error>> {$/;"	f
+post	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn post() -> TestRequest {$/;"	f
+post	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn post<S: AsRef<str>>(&self, path: S) -> ClientRequest {$/;"	f
+post	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn post() -> Route {$/;"	f
+put	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn put() -> TestRequest {$/;"	f
+put	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn put<S: AsRef<str>>(&self, path: S) -> ClientRequest {$/;"	f
+put	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn put() -> Route {$/;"	f
+query_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn query_string(&self) -> &str {$/;"	f
+query_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn query_string(&self) -> &str {$/;"	f
+redirect_to_slash_directory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn redirect_to_slash_directory(mut self) -> Self {$/;"	f
+register	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    fn register(self, config: &mut AppService) {$/;"	f
+register	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    fn register(mut self, config: &mut AppService) {$/;"	f
+register	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    fn register(mut self, config: &mut AppService) {$/;"	f
+register	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn register(&mut self, config: &mut AppService) {$/;"	f
+register	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn register(&mut self, config: &mut AppService);$/;"	f
+register	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn register(mut self, config: &mut AppService) {$/;"	f
+register	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn register(self, config: &mut AppService);$/;"	f
+register_service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn register_service<F, S>($/;"	f
+remote	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^    pub fn remote(&self) -> Option<&str> {$/;"	f
+render	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn render($/;"	f
+render_500	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/condition.rs	/^    fn render_500<B>(mut res: ServiceResponse<B>) -> Result<ErrorHandlerResponse<B>> {$/;"	f
+render_500	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    fn render_500<B>(mut res: ServiceResponse<B>) -> Result<ErrorHandlerResponse<B>> {$/;"	f
+render_500_async	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    fn render_500_async<B: 'static>($/;"	f
+render_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn render_request(&mut self, now: time::Tm, req: &ServiceRequest) {$/;"	f
+render_response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn render_response<B>(&mut self, res: &HttpResponse<B>) {$/;"	f
+request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn request(&self) -> &HttpRequest {$/;"	f
+request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn request<S: AsRef<str>>(&self, method: Method, path: S) -> ClientRequest {$/;"	f
+resource	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn resource<T: IntoPattern>(path: T) -> Resource {$/;"	f
+resource_map	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn resource_map(&self) -> &ResourceMap {$/;"	f
+resource_map	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn resource_map(&self) -> &ResourceMap {$/;"	f
+resource_path	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn resource_path(&mut self) -> &mut Path<Url> {$/;"	f
+respond_to	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    fn respond_to(self, req: &HttpRequest) -> Self::Future {$/;"	f
+respond_to	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    fn respond_to(mut self, _: &HttpRequest) -> Self::Future {$/;"	f
+respond_to	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    fn respond_to(self, _: &HttpRequest) -> Self::Future {$/;"	f
+respond_to	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    fn respond_to(self, req: &HttpRequest) -> Self::Future {$/;"	f
+respond_to	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    fn respond_to(self, req: &HttpRequest) -> Self::Future;$/;"	f
+respond_to	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    fn respond_to(self, _: &HttpRequest) -> Self::Future {$/;"	f
+respond_to	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    fn respond_to(self, _: &HttpRequest) -> Self::Future {$/;"	f
+response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn response(&self) -> &Response<B> {$/;"	f
+response_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn response_mut(&mut self) -> &mut Response<B> {$/;"	f
+route	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    pub fn route(self, path: &str, mut route: Route) -> Self {$/;"	f
+route	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn route(&mut self, path: &str, mut route: Route) -> &mut Self {$/;"	f
+route	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    pub fn route(mut self, route: Route) -> Self {$/;"	f
+route	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    pub fn route(self, path: &str, mut route: Route) -> Self {$/;"	f
+route	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn route() -> Route {$/;"	f
+run	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/builder.rs	/^    pub fn run(self) -> io::Result<()> {$/;"	f
+run	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/builder.rs	/^    pub fn run<F>(self, f: F) -> io::Result<()>$/;"	f
+run	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn run<F>(f: F) -> io::Result<()>$/;"	f
+run	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn run(self) -> Server {$/;"	f
+run_in_tokio	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn run_in_tokio<T: Into<String>>($/;"	f
+rustls	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn rustls(mut self, config: rust_tls::ServerConfig) -> Self {$/;"	f
+scheme	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    pub fn scheme<H: AsRef<str>>(mut self, scheme: H) -> HostGuard {$/;"	f
+scheme	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^    pub fn scheme(&self) -> &str {$/;"	f
+scope	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn scope(path: &str) -> Scope {$/;"	f
+secure	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn secure(&self) -> bool {$/;"	f
+send	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn send<F>(&self, future: F)$/;"	f
+server_hostname	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn server_hostname<T: AsRef<str>>(self, val: T) -> Self {$/;"	f
+service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    pub fn service<F>(mut self, factory: F) -> Self$/;"	f
+service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn service<F>(&mut self, factory: F) -> &mut Self$/;"	f
+service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    pub fn service<F>(mut self, factory: F) -> Self$/;"	f
+service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn service<T: IntoPattern>(path: T) -> WebService {$/;"	f
+set	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn set<H: Header>(mut self, hdr: H) -> Self {$/;"	f
+set_content_disposition	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn set_content_disposition(mut self, cd: header::ContentDisposition) -> Self {$/;"	f
+set_content_encoding	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn set_content_encoding(mut self, enc: ContentEncoding) -> Self {$/;"	f
+set_content_type	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn set_content_type(mut self, mime_type: mime::Mime) -> Self {$/;"	f
+set_current	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn set_current(sys: System) {$/;"	f
+set_data_container	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn set_data_container(&mut self, extensions: Rc<Extensions>) {$/;"	f
+set_form	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn set_form<T: Serialize>(mut self, data: &T) -> Self {$/;"	f
+set_item	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn set_item<T: 'static>(item: T) {$/;"	f
+set_json	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn set_json<T: Serialize>(mut self, data: &T) -> Self {$/;"	f
+set_payload	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn set_payload(&mut self, payload: Payload) {$/;"	f
+set_payload	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn set_payload<B: Into<Bytes>>(mut self, data: B) -> Self {$/;"	f
+set_service_data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^    pub fn set_service_data(&self, extensions: &mut Extensions) -> bool {$/;"	f
+set_status_code	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn set_status_code(mut self, status: StatusCode) -> Self {$/;"	f
+show_files_listing	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn show_files_listing(mut self) -> Self {$/;"	f
+shutdown_timeout	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn shutdown_timeout(mut self, sec: u64) -> Self {$/;"	f
+size	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn size(&self) -> BodySize {$/;"	f
+spawn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn spawn<F>(future: F)$/;"	f
+spawn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/lib.rs	/^pub fn spawn<F>(f: F)$/;"	f
+spawn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/runtime.rs	/^    pub fn spawn<F>(&self, future: F) -> &Self$/;"	f
+spawn_fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn spawn_fn<F, R>(f: F)$/;"	f
+start	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^pub fn start<F, I, S, B>(factory: F) -> TestServer$/;"	f
+start_with	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^pub fn start_with<F, I, S, B>(cfg: TestServerConfig, factory: F) -> TestServer$/;"	f
+status	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn status(&self) -> StatusCode {$/;"	f
+status_code	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/error.rs	/^    fn status_code(&self) -> StatusCode {$/;"	f
+status_code	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^    fn status_code(&self) -> StatusCode {$/;"	f
+stop	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    pub fn stop(&self) {$/;"	f
+stop	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn stop(&self) {$/;"	f
+stop_on_panic	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/builder.rs	/^    pub fn stop_on_panic(mut self, stop_on_panic: bool) -> Self {$/;"	f
+stop_on_panic	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn stop_on_panic(&self) -> bool {$/;"	f
+stop_with_code	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn stop_with_code(&self, code: i32) {$/;"	f
+system_exit	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn system_exit(mut self) -> Self {$/;"	f
+take_body	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn take_body(&mut self) -> ResponseBody<B> {$/;"	f
+take_payload	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn take_payload(&mut self) -> Payload<Self::Stream> {$/;"	f
+take_payload	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn take_payload(&mut self) -> Payload<Self::Stream> {$/;"	f
+take_raw_fd	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/manager.rs	/^    pub fn take_raw_fd(&mut self, idx: usize) -> io::Result<Option<imp::FdType>> {$/;"	f
+take_raw_socket	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/manager.rs	/^    pub fn take_raw_socket(&mut self, idx: usize) -> io::Result<Option<imp::RawSocket>> {$/;"	f
+take_tcp_listener	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/manager.rs	/^    pub fn take_tcp_listener(&mut self, idx: usize) -> io::Result<Option<TcpListener>> {$/;"	f
+take_udp_socket	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/manager.rs	/^    pub fn take_udp_socket(&mut self, idx: usize) -> io::Result<Option<UdpSocket>> {$/;"	f
+take_unix_listener	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/manager.rs	/^    pub fn take_unix_listener(&mut self, idx: usize) -> io::Result<Option<UnixListener>> {$/;"	f
+test_debug	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn test_debug() {$/;"	f
+test_fmt_debug	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn test_fmt_debug() {$/;"	f
+test_forwarded	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^    fn test_forwarded() {$/;"	f
+test_header	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_header() {$/;"	f
+test_host	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_host() {$/;"	f
+test_host_scheme	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_host_scheme() {$/;"	f
+test_host_without_header	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_host_without_header() {$/;"	f
+test_json_payload_error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^    fn test_json_payload_error() {$/;"	f
+test_methods	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_methods() {$/;"	f
+test_no_request_cookies	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn test_no_request_cookies() {$/;"	f
+test_parse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/range.rs	/^    fn test_parse() {$/;"	f
+test_preds	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_preds() {$/;"	f
+test_query_payload_error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^    fn test_query_payload_error() {$/;"	f
+test_readlines_error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^    fn test_readlines_error() {$/;"	f
+test_request_cookies	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn test_request_cookies() {$/;"	f
+test_request_query	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn test_request_query() {$/;"	f
+test_service_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn test_service_request() {$/;"	f
+test_url_for	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn test_url_for() {$/;"	f
+test_url_for_external	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn test_url_for_external() {$/;"	f
+test_url_for_static	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn test_url_for_static() {$/;"	f
+test_urlencoded_error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^    fn test_urlencoded_error() {$/;"	f
+to	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    pub fn to<F, I, R, U>(mut self, handler: F) -> Self$/;"	f
+to	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    pub fn to<F, T, R, U>(mut self, handler: F) -> Self$/;"	f
+to	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/web.rs	/^pub fn to<F, I, R, U>(handler: F) -> Route$/;"	f
+to_http_parts	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn to_http_parts(mut self) -> (HttpRequest, Payload) {$/;"	f
+to_http_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn to_http_request(mut self) -> HttpRequest {$/;"	f
+to_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn to_request(mut self) -> Request {$/;"	f
+to_srv_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn to_srv_request(mut self) -> ServiceRequest {$/;"	f
+to_srv_response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn to_srv_response<B>(self, res: HttpResponse<B>) -> ServiceResponse<B> {$/;"	f
+tuple_from_req	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/extract.rs	/^macro_rules! tuple_from_req ({$fut_type:ident, $(($n:tt, $T:ident)),+} => {$/;"	d
+unused_addr	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^pub fn unused_addr() -> net::SocketAddr {$/;"	f
+uri	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn uri(&self) -> &Uri {$/;"	f
+uri	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn uri(&self) -> &Uri {$/;"	f
+uri	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn uri(mut self, path: &str) -> Self {$/;"	f
+url	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn url(&self, uri: &str) -> String {$/;"	f
+url_for	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn url_for<U, I>($/;"	f
+url_for	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/rmap.rs	/^    pub fn url_for<U, I>($/;"	f
+url_for_static	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn url_for_static(&self, name: &str) -> Result<url::Url, UrlGenerationError> {$/;"	f
+use_etag	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn use_etag(mut self, value: bool) -> Self {$/;"	f
+use_etag	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn use_etag(mut self, value: bool) -> Self {$/;"	f
+use_guards	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn use_guards<G: Guard + 'static>(mut self, guards: G) -> Self {$/;"	f
+use_last_modified	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn use_last_modified(mut self, value: bool) -> Self {$/;"	f
+use_last_modified	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn use_last_modified(mut self, value: bool) -> Self {$/;"	f
+validate_socket	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/unix.rs	/^fn validate_socket($/;"	f
+version	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn version(&self) -> Version {$/;"	f
+version	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn version(&self) -> Version {$/;"	f
+version	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn version(mut self, ver: Version) -> Self {$/;"	f
+with_current	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn with_current<F, R>(f: F) -> R$/;"	f
+with_fd	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/manager.rs	/^    fn with_fd<R, F: FnOnce(imp::FdType) -> io::Result<R>>($/;"	f
+with_hdr	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn with_hdr<H: Header>(hdr: H) -> TestRequest {$/;"	f
+with_header	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    fn with_header<K, V>(self, key: K, value: V) -> CustomResponder<Self>$/;"	f
+with_header	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    pub fn with_header<K, V>(mut self, key: K, value: V) -> Self$/;"	f
+with_header	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn with_header<K, V>(key: K, value: V) -> TestRequest$/;"	f
+with_sender	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    fn with_sender(sender: UnboundedSender<ArbiterCommand>) -> Self {$/;"	f
+with_status	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    fn with_status(self, status: StatusCode) -> CustomResponder<Self>$/;"	f
+with_status	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^    pub fn with_status(mut self, status: StatusCode) -> Self {$/;"	f
+with_uri	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn with_uri(path: &str) -> TestRequest {$/;"	f
+workers	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/server.rs	/^    pub fn workers(mut self, num: usize) -> Self {$/;"	f
+wrap	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    pub fn wrap<M, B1>($/;"	f
+wrap	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    pub fn wrap<M>($/;"	f
+wrap	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    pub fn wrap<M>($/;"	f
+wrap_fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app.rs	/^    pub fn wrap_fn<B1, F, R>($/;"	f
+wrap_fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/resource.rs	/^    pub fn wrap_fn<F, R>($/;"	f
+wrap_fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^    pub fn wrap_fn<F, R>($/;"	f
