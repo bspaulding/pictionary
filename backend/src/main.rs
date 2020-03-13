@@ -1,6 +1,7 @@
 use listenfd::ListenFd;
 use actix_files as fs;
 use actix_web::{web, App, HttpResponse, HttpServer, Responder};
+use serde::{Serialize};
 
 #[derive(Debug)]
 struct Point {
@@ -15,8 +16,15 @@ struct PictionaryModel {
     points_drawn: Vec<Point>,
 }
 
-async fn hello() -> impl Responder {
-    HttpResponse::Ok().body("Hello world!")
+#[derive(Serialize)]
+struct CreateRoomResponse {
+    room: String
+}
+
+async fn create_room() -> impl Responder {
+    HttpResponse::Ok().json(CreateRoomResponse {
+        room: String::from("xkcd")
+    })
 }
 
 #[actix_rt::main]
@@ -29,7 +37,7 @@ async fn main() -> std::io::Result<()> {
     let mut listenfd = ListenFd::from_env();
     let mut server = HttpServer::new(|| {
         App::new()
-            .route("/hello", web::get().to(hello))
+            .route("/api/v1/rooms", web::post().to(create_room))
             .service(fs::Files::new("/", "../frontend/public").index_file("index.html"))
     });
 
