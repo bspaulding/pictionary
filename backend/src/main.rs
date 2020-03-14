@@ -4,9 +4,9 @@ use actix_files as fs;
 use actix_web::{web, App, Error, HttpRequest, HttpResponse, HttpServer, Responder, middleware::Logger};
 use actix_web_actors::ws;
 use env_logger;
-use rand::{self, rngs::ThreadRng, Rng};
 use serde::{Deserialize, Serialize};
 use std::collections::{HashMap, HashSet};
+use uuid::Uuid;
 
 #[derive(Message)]
 #[rtype(WebSocketConnectedResult)]
@@ -18,7 +18,7 @@ struct WebSocketConnected {
 #[derive(Message)]
 #[rtype(result = "()")]
 struct WebSocketDisconnected {
-    id: usize
+    id: SessionId
 }
 
 #[derive(Message)]
@@ -28,7 +28,7 @@ struct CreateRoom {
 }
 
 struct PictionaryWebSocketSession {
-    id: usize,
+    id: SessionId,
     room_id: String,
     addr: Addr<PictionaryServer>
 }
@@ -127,7 +127,7 @@ async fn ws_handler(
 ) -> Result<HttpResponse, Error> {
     println!("Opening socket for room: {:?}", info);
     let resp = ws::start(PictionaryWebSocketSession {
-        id: 0,
+        id: Uuid::new_v4(),
         room_id: info.to_string(),
         addr: server.get_ref().clone(),
     }, &req, stream);
@@ -160,11 +160,11 @@ impl Default for PictionaryModel {
     }
 }
 
+type SessionId = Uuid;
 struct PictionaryServer {
-    sessions_by_id: HashMap<usize, Recipient<WsEvent>>,
-    sessions_by_room_id: HashMap<String, HashSet<usize>>, // room id / session ids
+    sessions_by_id: HashMap<SessionId, Recipient<WsEvent>>,
+    sessions_by_room_id: HashMap<String, HashSet<SessionId>>, // room id / session ids
     models_by_room_id: HashMap<String, PictionaryModel>,
-    rng: ThreadRng,
 }
 
 impl Default for PictionaryServer {
@@ -174,7 +174,6 @@ impl Default for PictionaryServer {
             sessions_by_id: HashMap::new(),
             sessions_by_room_id: HashMap::new(),
             models_by_room_id: HashMap::new(),
-            rng: rand::thread_rng()
         }
     }
 }
@@ -185,7 +184,7 @@ impl Actor for PictionaryServer {
 
 #[derive(Serialize)]
 struct WebSocketConnectedResult {
-    id: usize,
+    id: SessionId,
     model: PictionaryModel,
 }
 
@@ -209,7 +208,7 @@ impl Handler<WebSocketConnected> for PictionaryServer {
         println!("Someone joined room with id: {:?}", msg.room_id);
         // TODO: return error if room does not exist
         // TODO: send player joined message to all sessions in room
-        let id = self.rng.gen::<usize>();
+        let id = Uuid::new_v4();
         self.sessions_by_id.insert(id, msg.addr);
         self.sessions_by_room_id.get_mut(&msg.room_id).unwrap().insert(id);
         let model = self.models_by_room_id.get(&msg.room_id).unwrap().clone();
@@ -272,7 +271,7 @@ impl Handler<WsRoomEvent> for PictionaryServer {
             },
             _ => ()
         }
-        let session_ids: &HashSet<usize> = self.sessions_by_room_id.get(&msg.room_id).unwrap();
+        let session_ids: &HashSet<SessionId> = self.sessions_by_room_id.get(&msg.room_id).unwrap();
         for session_id in session_ids {
             if let Some(addr) = self.sessions_by_id.get(session_id) {
                 addr.do_send(msg.event.clone()).unwrap();

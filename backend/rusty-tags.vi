@@ -1,5 +1,6 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+ACC_GROUP_LENS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/parser/mod.rs	/^const ACC_GROUP_LENS: [usize; 5] = [8, 12, 16, 20, 32];$/;"	c
 ADDR	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/arbiter.rs	/^    static ADDR: RefCell<Option<Arbiter>> = RefCell::new(None);$/;"	c
 ALIAS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/symbol.rs	/^pub const ALIAS: Symbol = Symbol("alias");$/;"	c
 ALWAYS_TRUE	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/bernoulli.rs	/^const ALWAYS_TRUE: u64 = ::core::u64::MAX;$/;"	c
@@ -73,6 +74,8 @@ BORROW	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_d
 BOUND	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/symbol.rs	/^pub const BOUND: Symbol = Symbol("bound");$/;"	c
 BS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^    const BS: bool = true; \/\/ backslash \\x5C$/;"	c
 BS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^const BS: u8 = b'\\\\'; \/\/ \\x5C$/;"	c
+BYTES_LEN	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^        const BYTES_LEN: usize = 16;$/;"	c
+BYTE_POSITIONS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^const BYTE_POSITIONS: [usize; 6] = [0, 4, 6, 8, 10, 16];$/;"	c
 Bernoulli	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/bernoulli.rs	/^pub struct Bernoulli {$/;"	s
 Beta	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/gamma.rs	/^pub struct Beta {$/;"	s
 Binomial	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/binomial.rs	/^pub struct Binomial {$/;"	s
@@ -100,6 +103,8 @@ BoxedVisitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/s
 Builder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/builder.rs	/^pub struct Builder {$/;"	s
 Builder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/filter/mod.rs	/^pub struct Builder {$/;"	s
 Builder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/lib.rs	/^pub struct Builder {$/;"	s
+Builder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^pub struct Builder(crate::Bytes);$/;"	s
+Bytes	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^pub type Bytes = [u8; 16];$/;"	T
 BytesDeserializer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/de.rs	/^pub struct BytesDeserializer<'a, E> {$/;"	s
 BytesVisitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/impls.rs	/^struct BytesVisitor;$/;"	s
 C	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/index.rs	/^        const C: [[f32; 2]; 2] = [[1.6, 8.0\/45.0], [10.0, 70.0\/9.0]];$/;"	c
@@ -122,6 +127,7 @@ ChiSquared	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/ran
 ChiSquaredRepr	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/gamma.rs	/^enum ChiSquaredRepr {$/;"	g
 ChunkHintedIterator	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/mod.rs	/^    struct ChunkHintedIterator<I: ExactSizeIterator + Iterator + Clone> {$/;"	s
 ChunkedReadFile	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^pub struct ChunkedReadFile {$/;"	s
+ClockSequence	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^pub trait ClockSequence {$/;"	t
 Color	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/fmt/writer/termcolor/extern_impl.rs	/^pub enum Color {$/;"	g
 CompactFormatter	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^pub struct CompactFormatter;$/;"	s
 Compound	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^pub enum Compound<'a, W: 'a, F: 'a> {$/;"	g
@@ -173,6 +179,7 @@ Context	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-
 Context	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/sync.rs	/^    type Context = Context<Self>;$/;"	T
 Context	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^            type Context = actix::Context<Self>;$/;"	T
 Context	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-actors-2.0.0/src/context.rs	/^        type Context = HttpContext<Self>;$/;"	T
+Context	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^pub struct Context {$/;"	s
 Context	/Users/bspaulding/Documents/Code/pictionary/backend/src/main.rs	/^    type Context = Context<Self>;$/;"	T
 Context	/Users/bspaulding/Documents/Code/pictionary/backend/src/main.rs	/^    type Context = ws::WebsocketContext<Self>;$/;"	T
 ContextFlags	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/contextimpl.rs	/^    struct ContextFlags: u8 {$/;"	s
@@ -194,6 +201,7 @@ Ctxt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_der
 Custom	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/rngs/entropy.rs	/^type Custom = NoSource;$/;"	T
 CustomResponder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^pub struct CustomResponder<T> {$/;"	s
 CustomResponderFut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^pub struct CustomResponderFut<T: Responder> {$/;"	s
+D4_LEN	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^        const D4_LEN: usize = 8;$/;"	c
 DEFAULT	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/symbol.rs	/^pub const DEFAULT: Symbol = Symbol("default");$/;"	c
 DEFAULT_CAPACITY	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/mailbox.rs	/^pub const DEFAULT_CAPACITY: usize = 16;$/;"	c
 DEFAULT_FILTER_ENV	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/lib.rs	/^pub const DEFAULT_FILTER_ENV: &'static str = "RUST_LOG";$/;"	c
@@ -248,6 +256,9 @@ EPSILON64	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand
 ESCAPE	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^static ESCAPE: [bool; 256] = {$/;"	c
 ESCAPE	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^static ESCAPE: [u8; 256] = [$/;"	c
 ETAG	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^        const ETAG = 0b0000_0001;$/;"	c
+EXPECTED_CHARS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/parser/mod.rs	/^        const EXPECTED_CHARS: &'static str = "0123456789abcdefABCDEF-";$/;"	c
+EXPECTED_GROUP_COUNTS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/parser/mod.rs	/^        const EXPECTED_GROUP_COUNTS: error::ExpectedLength =$/;"	c
+EXPECTED_UUID_LENGTHS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/parser/mod.rs	/^        const EXPECTED_UUID_LENGTHS: error::ExpectedLength =$/;"	c
 Either	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/fut/either.rs	/^pub enum Either<A, B> {$/;"	g
 Either	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^pub enum Either<A, B> {$/;"	g
 EitherResponder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/responder.rs	/^pub enum EitherResponder<A, B>$/;"	g
@@ -269,6 +280,7 @@ EnvelopeProxy	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/
 Err	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/case.rs	/^    type Err = ();$/;"	T
 Err	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/de.rs	/^    type Err = Error;$/;"	T
 Err	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^    type Err = Error;$/;"	T
+Err	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    type Err = Error;$/;"	T
 Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Error = Error;$/;"	T
 Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    type Error = UriSegmentError;$/;"	T
 Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    type Error = Error;$/;"	T
@@ -328,6 +340,7 @@ Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_js
 Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^    type Error = Error;$/;"	T
 Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^    type Error = Error;$/;"	T
 Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/ser.rs	/^    type Error = Error;$/;"	T
+Error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/error.rs	/^pub struct Error(Inner);$/;"	s
 ErrorHandler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^type ErrorHandler<B> = dyn Fn(ServiceResponse<B>) -> Result<ErrorHandlerResponse<B>>;$/;"	T
 ErrorHandlerResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^pub enum ErrorHandlerResponse<B> {$/;"	g
 ErrorHandlers	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^pub struct ErrorHandlers<B> {$/;"	s
@@ -357,6 +370,8 @@ FIELDS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_d
 FIELDS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/de.rs	/^        const FIELDS: &'static [&'static str] = &[#tag, #content];$/;"	c
 FIELD_IDENTIFIER	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/symbol.rs	/^pub const FIELD_IDENTIFIER: Symbol = Symbol("field_identifier");$/;"	c
 FILE_INFORMATION	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/listenfd-0.3.3/src/windows.rs	/^pub struct FILE_INFORMATION {$/;"	s
+FIXTURE	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v3.rs	/^    static FIXTURE: &'static [(&'static Uuid, &'static str, &'static str)] = &[$/;"	c
+FIXTURE	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v5.rs	/^    static FIXTURE: &'static [(&'static Uuid, &'static str, &'static str)] = &[$/;"	c
 FLATTEN	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/symbol.rs	/^pub const FLATTEN: Symbol = Symbol("flatten");$/;"	c
 FORK_HANDLER_REGISTERED	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/rngs/adapter/reseeding.rs	/^    static FORK_HANDLER_REGISTERED: AtomicBool = ATOMIC_BOOL_INIT;$/;"	c
 FORMATTER	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/lib.rs	/^                static FORMATTER: RefCell<Option<Formatter>> = RefCell::new(None);$/;"	c
@@ -469,6 +484,7 @@ FutureWrap	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/act
 GAP_SIZE	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/other.rs	/^        const GAP_SIZE: u32 = 0xDFFF - 0xD800 + 1;$/;"	c
 GEN_ASCII_STR_CHARSET	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/other.rs	/^        const GEN_ASCII_STR_CHARSET: &[u8] =$/;"	c
 GETTER	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/symbol.rs	/^pub const GETTER: Symbol = Symbol("getter");$/;"	c
+GROUP_LENS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/parser/mod.rs	/^const GROUP_LENS: [usize; 5] = [8, 4, 4, 4, 12];$/;"	c
 Gamma	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/gamma.rs	/^pub struct Gamma {$/;"	s
 GammaLargeShape	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/gamma.rs	/^struct GammaLargeShape {$/;"	s
 GammaRepr	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/gamma.rs	/^enum GammaRepr {$/;"	g
@@ -483,6 +499,7 @@ H2	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2
 HEX	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^static HEX: [u8; 256] = {$/;"	c
 HEX_DIGITS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^                static HEX_DIGITS: [u8; 16] = *b"0123456789abcdef";$/;"	c
 HIGH_WATERMARK	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/io.rs	/^const HIGH_WATERMARK: usize = 4 * LOW_WATERMARK;$/;"	c
+HYPHEN_POSITIONS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^const HYPHEN_POSITIONS: [usize; 4] = [8, 13, 18, 23];$/;"	c
 Handler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/handler.rs	/^pub trait Handler<M>$/;"	t
 Handler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^pub struct Handler<F, T, R, O>$/;"	s
 HandlerServiceResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/handler.rs	/^pub struct HandlerServiceResponse<T, R>$/;"	s
@@ -512,6 +529,8 @@ HttpServiceFactory	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9e
 HttpServiceFut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/app_service.rs	/^type HttpServiceFut = LocalBoxFuture<'static, Result<HttpService, ()>>;$/;"	T
 HttpServiceFut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/scope.rs	/^type HttpServiceFut = LocalBoxFuture<'static, Result<HttpService, ()>>;$/;"	T
 HttpVer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^enum HttpVer {$/;"	g
+Hyphenated	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^pub struct Hyphenated(Uuid);$/;"	s
+HyphenatedRef	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^pub struct HyphenatedRef<'a>(&'a Uuid);$/;"	s
 INC	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.4.2/src/lib.rs	/^        const INC: u64 = 11634580027462260723;$/;"	c
 INIT_STATE	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/address/channel.rs	/^const INIT_STATE: usize = OPEN_MASK;$/;"	c
 INTO	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/symbol.rs	/^pub const INTO: Symbol = Symbol("into");$/;"	c
@@ -547,6 +566,7 @@ InitError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/acti
 Inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/address/channel.rs	/^struct Inner<A: Actor> {$/;"	s
 Inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/defaultheaders.rs	/^struct Inner {$/;"	s
 Inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^struct Inner {$/;"	s
+Inner	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/error.rs	/^enum Inner {$/;"	g
 InnerSinkWrite	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/io.rs	/^struct InnerSinkWrite<I, S: Sink<I>> {$/;"	s
 InnerWriter	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/io.rs	/^struct InnerWriter<E: From<io::Error>> {$/;"	s
 InternallyTaggedUnitVisitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/de.rs	/^    pub struct InternallyTaggedUnitVisitor<'a> {$/;"	s
@@ -614,6 +634,10 @@ KeysImpl	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde
 KeysImpl	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/map.rs	/^type KeysImpl<'a> = indexmap::map::Keys<'a, String, Value>;$/;"	T
 KindVisitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/impls.rs	/^                struct KindVisitor;$/;"	s
 LAST_MD	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^        const LAST_MD = 0b0000_0010;$/;"	c
+LENGTH	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub const LENGTH: usize = 32;$/;"	c
+LENGTH	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub const LENGTH: usize = 36;$/;"	c
+LENGTH	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub const LENGTH: usize = 45;$/;"	c
+LOWER	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^const LOWER: [u8; 16] = [$/;"	c
 LOWER_MASK	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/utils.rs	/^                    const LOWER_MASK: $scalar = !0 >> $half;$/;"	c
 LOWER_MASK	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/utils.rs	/^                const LOWER_MASK: $ty = !0 >> $half;$/;"	c
 LOW_WATERMARK	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/io.rs	/^const LOW_WATERMARK: usize = 4 * 1024;$/;"	c
@@ -681,7 +705,12 @@ N	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/s
 N	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.4.2/src/lib.rs	/^        const N: usize = 8;$/;"	c
 N	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/number.rs	/^enum N {$/;"	g
 N	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/number.rs	/^type N = String;$/;"	T
+NAMESPACE_DNS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub const NAMESPACE_DNS: Self = Uuid([$/;"	c
+NAMESPACE_OID	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub const NAMESPACE_OID: Self = Uuid([$/;"	c
+NAMESPACE_URL	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub const NAMESPACE_URL: Self = Uuid([$/;"	c
+NAMESPACE_X500	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub const NAMESPACE_X500: Self = Uuid([$/;"	c
 NN	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^const NN: u8 = b'n'; \/\/ \\x0A$/;"	c
+NODE_ID_LEN	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^        const NODE_ID_LEN: usize = 6;$/;"	c
 NO_PARAMS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^        const NO_PARAMS: [&str; 0] = [];$/;"	c
 NULL	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/index.rs	/^        static NULL: Value = Value::Null;$/;"	c
 NUM	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/bernoulli.rs	/^        const NUM: u32 = 3;$/;"	c
@@ -1094,7 +1123,10 @@ Service	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-
 ServiceConfig	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/config.rs	/^pub struct ServiceConfig {$/;"	s
 ServiceRequest	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^pub struct ServiceRequest(HttpRequest);$/;"	s
 ServiceResponse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^pub struct ServiceResponse<B = Body> {$/;"	s
+SessionId	/Users/bspaulding/Documents/Code/pictionary/backend/src/main.rs	/^type SessionId = Uuid;$/;"	T
 SetCounter	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/address/mod.rs	/^    pub struct SetCounter(usize);$/;"	s
+Simple	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^pub struct Simple(Uuid);$/;"	s
+SimpleRef	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^pub struct SimpleRef<'a>(&'a Uuid);$/;"	s
 SinkWrite	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/io.rs	/^pub struct SinkWrite<I, S: Sink<I> + Unpin> {$/;"	s
 SinkWriteFuture	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/io.rs	/^struct SinkWriteFuture<I: 'static, S: Sink<I>, A> {$/;"	s
 SliceChooseIter	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/mod.rs	/^pub struct SliceChooseIter<'a, S: ?Sized + 'a, T: 'a> {$/;"	s
@@ -1198,6 +1230,7 @@ Timeout	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-
 TimerFunc	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/utils.rs	/^pub struct TimerFunc<A>$/;"	s
 TimerFuncBox	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/utils.rs	/^trait TimerFuncBox<A: Actor>: 'static {$/;"	t
 Timestamp	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/fmt/humantime/extern_impl.rs	/^pub struct Timestamp {$/;"	s
+Timestamp	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^pub struct Timestamp {$/;"	s
 TimestampPrecision	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/fmt/mod.rs	/^pub enum TimestampPrecision {$/;"	g
 TimestampValue	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/fmt/humantime/extern_impl.rs	/^        struct TimestampValue<'a>(&'a Timestamp);$/;"	s
 ToEnvelope	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/address/envelope.rs	/^pub trait ToEnvelope<A, M: Message>$/;"	t
@@ -1220,8 +1253,10 @@ U32Deserializer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec82
 UInt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/utils.rs	/^            type UInt = $uty;$/;"	T
 UInt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/utils.rs	/^    type UInt;$/;"	T
 UNTAGGED	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/symbol.rs	/^pub const UNTAGGED: Symbol = Symbol("untagged");$/;"	c
+UPPER	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^const UPPER: [u8; 16] = [$/;"	c
 URI	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^        const URI: &str = "\/v1\/something\/";$/;"	c
 UU	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^const UU: u8 = b'u'; \/\/ \\x00...\\x1F except the ones above$/;"	c
+UUID_TICKS_BETWEEN_EPOCHS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^const UUID_TICKS_BETWEEN_EPOCHS: u64 = 0x01B2_1DD2_1381_4000;$/;"	c
 Unexpected	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/mod.rs	/^pub enum Unexpected<'a> {$/;"	g
 UnhintedIterator	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/mod.rs	/^    struct UnhintedIterator<I: Iterator + Clone> {$/;"	s
 Uniform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/uniform.rs	/^pub struct Uniform<X: SampleUniform> {$/;"	s
@@ -1246,6 +1281,12 @@ UriSegmentError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec82
 UrlEncoded	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^pub struct UrlEncoded<U> {$/;"	s
 UrlGenerationError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^pub enum UrlGenerationError {$/;"	g
 UrlencodedError	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^pub enum UrlencodedError {$/;"	g
+Urn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^pub struct Urn(Uuid);$/;"	s
+UrnRef	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^pub struct UrnRef<'a>(&'a Uuid);$/;"	s
+Uuid	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^pub struct Uuid(Bytes);$/;"	s
+UuidBytesVisitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/serde_support.rs	/^            struct UuidBytesVisitor;$/;"	s
+UuidContainer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/compact.rs	/^        struct UuidContainer {$/;"	s
+UuidStringVisitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/serde_support.rs	/^            struct UuidStringVisitor;$/;"	s
 VARIANTS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/impls.rs	/^        const VARIANTS: &'static [&'static str] = &["Ok", "Err"];$/;"	c
 VARIANTS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/impls.rs	/^        const VARIANTS: &'static [&'static str] = &["Unbounded", "Included", "Excluded"];$/;"	c
 VARIANTS	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/de.rs	/^            const VARIANTS: &'static [&'static str] = &[ #(#names),* ];$/;"	c
@@ -1320,6 +1361,7 @@ Value	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_js
 Value	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^            type Value = Value;$/;"	T
 Value	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^    type Value = KeyClass;$/;"	T
 Value	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^pub enum Value {$/;"	g
+Value	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/serde_support.rs	/^                type Value = Uuid;$/;"	T
 ValueVisitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^        struct ValueVisitor;$/;"	s
 Values	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/map.rs	/^pub struct Values<'a> {$/;"	s
 ValuesImpl	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/map.rs	/^type ValuesImpl<'a> = btree_map::Values<'a, String, Value>;$/;"	T
@@ -1339,6 +1381,7 @@ Variant	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_
 Variant	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^    type Variant = UnitOnly;$/;"	T
 Variant	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^    type Variant = VariantDeserializer;$/;"	T
 Variant	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^    type Variant = VariantRefDeserializer<'de>;$/;"	T
+Variant	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^pub enum Variant {$/;"	g
 VariantAccess	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/mod.rs	/^pub trait VariantAccess<'de>: Sized {$/;"	t
 VariantAccess	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/de.rs	/^struct VariantAccess<'a, R: 'a> {$/;"	s
 VariantDeserializer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/de.rs	/^    pub struct VariantDeserializer<'de, E>$/;"	s
@@ -1348,6 +1391,7 @@ VariantRefDeserializer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299
 VecAttr	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^struct VecAttr<'c, T> {$/;"	s
 VecInPlaceVisitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/impls.rs	/^        struct VecInPlaceVisitor<'a, T: 'a>(&'a mut Vec<T>);$/;"	s
 VecVisitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/impls.rs	/^        struct VecVisitor<T> {$/;"	s
+Version	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^pub enum Version {$/;"	g
 Visitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/mod.rs	/^pub trait Visitor<'de>: Sized {$/;"	t
 Visitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/map.rs	/^        struct Visitor;$/;"	s
 Visitor	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/number.rs	/^        struct Visitor;$/;"	s
@@ -1417,6 +1461,7 @@ __private_visit_untagged_option	/Users/bspaulding/.cargo/registry/src/github.com
 __serialize_unimplemented	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/macros.rs	/^macro_rules! __serialize_unimplemented {$/;"	d
 __serialize_unimplemented_helper	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/macros.rs	/^macro_rules! __serialize_unimplemented_helper {$/;"	d
 __serialize_unimplemented_method	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/macros.rs	/^macro_rules! __serialize_unimplemented_method {$/;"	d
+_description	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/parser/error.rs	/^    fn _description(&self) -> &str {$/;"	f
 actfuture	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/fut/mod.rs	/^    fn actfuture(self) -> Self::Future {$/;"	f
 actfuture	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/fut/mod.rs	/^    fn actfuture(self) -> Self::Future;$/;"	f
 actstream	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/fut/mod.rs	/^    fn actstream(self) -> Self::Stream {$/;"	f
@@ -1478,6 +1523,7 @@ as_byte_slice_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec
 as_byte_slice_mut	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^    fn as_byte_slice_mut(&mut self) -> &mut [u8];$/;"	f
 as_f64	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/number.rs	/^    pub fn as_f64(&self) -> Option<f64> {$/;"	f
 as_f64	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^    pub fn as_f64(&self) -> Option<f64> {$/;"	f
+as_fields	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub fn as_fields(&self) -> (u32, u16, u16, &[u8; 8]) {$/;"	f
 as_i64	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/number.rs	/^    pub fn as_i64(&self) -> Option<i64> {$/;"	f
 as_i64	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^    pub fn as_i64(&self) -> Option<i64> {$/;"	f
 as_null	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^    pub fn as_null(&self) -> Option<()> {$/;"	f
@@ -1489,6 +1535,7 @@ as_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1
 as_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/de.rs	/^        pub fn as_str(&self) -> Option<&str> {$/;"	f
 as_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^fn as_str<'de, 's, R: Read<'de>>(read: &R, slice: &'s [u8]) -> Result<&'s str> {$/;"	f
 as_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^    pub fn as_str(&self) -> Option<&str> {$/;"	f
+as_u128	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub fn as_u128(&self) -> u128 {$/;"	f
 as_u64	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/number.rs	/^    pub fn as_u64(&self) -> Option<u64> {$/;"	f
 as_u64	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^    pub fn as_u64(&self) -> Option<u64> {$/;"	f
 assert_almost_eq	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/unit_circle.rs	/^    macro_rules! assert_almost_eq {$/;"	d
@@ -1534,6 +1581,7 @@ build	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt
 build	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/filter/mod.rs	/^    pub fn build(&mut self) -> Filter {$/;"	f
 build	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/fmt/mod.rs	/^    pub fn build(&mut self) -> Box<Fn(&mut Formatter, &Record) -> io::Result<()> + Sync + Send> {$/;"	f
 build	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/lib.rs	/^    pub fn build(&mut self) -> Logger {$/;"	f
+build	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub fn build(&mut self) -> Uuid {$/;"	f
 build_generics	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/de.rs	/^fn build_generics(cont: &Container, borrowed: &BorrowedLifetimes) -> syn::Generics {$/;"	f
 build_generics	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/ser.rs	/^fn build_generics(cont: &Container) -> syn::Generics {$/;"	f
 builder	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn builder() -> Builder {$/;"	f
@@ -1587,6 +1635,8 @@ check	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-we
 check	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/route.rs	/^    pub fn check(&self, req: &mut ServiceRequest) -> bool {$/;"	f
 check	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/check.rs	/^pub fn check(cx: &Ctxt, cont: &mut Container, derive: Derive) {$/;"	f
 check	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/ctxt.rs	/^    pub fn check(self) -> Result<(), Vec<syn::Error>> {$/;"	f
+check	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^        macro_rules! check {$/;"	d
+check	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    macro_rules! check {$/;"	d
 check_adjacent_tag_conflict	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/check.rs	/^fn check_adjacent_tag_conflict(cx: &Ctxt, cont: &Container) {$/;"	f
 check_flatten	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/check.rs	/^fn check_flatten(cx: &Ctxt, cont: &Container) {$/;"	f
 check_flatten_field	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/check.rs	/^fn check_flatten_field(cx: &Ctxt, style: Style, field: &Field) {$/;"	f
@@ -1734,6 +1784,7 @@ default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_
 default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/raw.rs	/^    fn default() -> Self {$/;"	f
 default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^    fn default() -> Self {$/;"	f
 default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^    fn default() -> Value {$/;"	f
+default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn default() -> Self {$/;"	f
 default	/Users/bspaulding/Documents/Code/pictionary/backend/src/main.rs	/^    fn default() -> PictionaryModel {$/;"	f
 default	/Users/bspaulding/Documents/Code/pictionary/backend/src/main.rs	/^    fn default() -> PictionaryServer {$/;"	f
 default_filter_or	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/lib.rs	/^    pub fn default_filter_or<V>(mut self, default: V) -> Self$/;"	f
@@ -1799,6 +1850,8 @@ deserialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/se
 deserialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/raw.rs	/^    fn deserialize<D>(self, deserializer: D) -> Result<Self::Value, D::Error>$/;"	f
 deserialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^    fn deserialize<D>(deserializer: D) -> Result<Value, D::Error>$/;"	f
 deserialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^    fn deserialize<D>(self, deserializer: D) -> Result<Self::Value, D::Error>$/;"	f
+deserialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/compact.rs	/^pub fn deserialize<'de, D>(deserializer: D) -> Result<crate::Uuid, D::Error>$/;"	f
+deserialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/serde_support.rs	/^    fn deserialize<D: Deserializer<'de>>($/;"	f
 deserialize_adjacently_tagged_enum	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/de.rs	/^fn deserialize_adjacently_tagged_enum($/;"	f
 deserialize_aliases	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^    fn deserialize_aliases(&self) -> Vec<String> {$/;"	f
 deserialize_any	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/mod.rs	/^    fn deserialize_any<V>(self, visitor: V) -> Result<V::Value, Self::Error>$/;"	f
@@ -2015,9 +2068,12 @@ enabled	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_lo
 enabled	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/filter/mod.rs	/^fn enabled(directives: &[Directive], level: Level, target: &str) -> bool {$/;"	f
 enabled	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/lib.rs	/^    fn enabled(&self, metadata: &Metadata) -> bool {$/;"	f
 encode	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/utf8.rs	/^pub fn encode(c: char) -> Encode {$/;"	f
+encode	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^fn encode<'a>($/;"	f
 encode_file_name	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^macro_rules! encode_file_name {$/;"	d
 encode_file_url	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^macro_rules! encode_file_url {$/;"	d
+encode_lower	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub fn encode_lower<'buf>(&self, buffer: &'buf mut [u8]) -> &'buf mut str {$/;"	f
 encode_state	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/address/channel.rs	/^fn encode_state(state: &State) -> usize {$/;"	f
+encode_upper	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub fn encode_upper<'buf>(&self, buffer: &'buf mut [u8]) -> &'buf mut str {$/;"	f
 encoding	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/lib.rs	/^        fn encoding(&mut self, encoding: ContentEncoding) -> &mut Self {$/;"	f
 encoding	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/lib.rs	/^        fn encoding(&mut self, encoding: ContentEncoding) -> &mut Self;$/;"	f
 end	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/value.rs	/^    pub fn end(self) -> Result<(), E> {$/;"	f
@@ -2103,6 +2159,7 @@ expecting	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serd
 expecting	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/raw.rs	/^    fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {$/;"	f
 expecting	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^            fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {$/;"	f
 expecting	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^    fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {$/;"	f
+expecting	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/serde_support.rs	/^                fn expecting($/;"	f
 expr_is_missing	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/de.rs	/^fn expr_is_missing(field: &Field, cattrs: &attr::Container) -> Fragment {$/;"	f
 extend	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/map.rs	/^    fn extend<T>(&mut self, iter: T)$/;"	f
 extensions	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn extensions(&self) -> Ref<'_, Extensions> {$/;"	f
@@ -2219,6 +2276,36 @@ fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json
 fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/index.rs	/^    fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {$/;"	f
 fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	f
 fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^    fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^            fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/error.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/error.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fmt	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/parser/error.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	f
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub const fn from_uuid(uuid: Uuid) -> Self {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub const fn from_uuid_ref(uuid: &'a Uuid) -> Self {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub const fn to_hyphenated(self) -> Hyphenated {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub const fn to_hyphenated_ref(&self) -> HyphenatedRef<'_> {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub const fn to_simple(self) -> Simple {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub const fn to_simple_ref(&self) -> SimpleRef<'_> {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub const fn to_urn(self) -> Urn {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    pub const fn to_urn_ref(&self) -> UrnRef<'_> {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/error.rs	/^    const fn expected(&self) -> usize {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/error.rs	/^    const fn found(&self) -> usize {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub const fn from_bytes(b: Bytes) -> Self {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub const fn from_bytes(bytes: Bytes) -> Uuid {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub const fn from_u128(v: u128) -> Self {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub const fn from_u128_le(v: u128) -> Self {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub const fn nil() -> Self {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub const fn as_bytes(&self) -> &Bytes {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub const fn encode_buffer() -> [u8; adapter::Urn::LENGTH] {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub const fn get_version_num(&self) -> usize {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/test_util.rs	/^pub const fn new() -> Uuid {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/test_util.rs	/^pub const fn new2() -> Uuid {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    pub const fn from_rfc4122(ticks: u64, counter: u16) -> Self {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    pub const fn new(count: u16) -> Self {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    pub const fn to_rfc4122(&self) -> (u64, u16) {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    pub const fn to_unix(&self) -> (u64, u32) {$/;"	c
+fn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    pub const fn to_unix_nanos(&self) -> u64 {$/;"	c
 fn_guard	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^pub fn fn_guard<F>(f: F) -> impl Guard$/;"	f
 fold	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/fut/mod.rs	/^    fn fold<F, T, Fut>(self, init: T, f: F) -> StreamFold<Self, F, Fut, T>$/;"	f
 fork_handler	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/rngs/adapter/reseeding.rs	/^    extern fn fork_handler() {$/;"	f
@@ -2270,6 +2357,10 @@ from	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_jso
 from	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/from.rs	/^    fn from(f: bool) -> Self {$/;"	f
 from	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/from.rs	/^    fn from(f: f32) -> Self {$/;"	f
 from	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/from.rs	/^    fn from(f: f64) -> Self {$/;"	f
+from	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^            fn from(f: &$a Uuid) -> Self {$/;"	f
+from	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^            fn from(f: Uuid) -> Self {$/;"	f
+from	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/error.rs	/^    fn from(err: builder::Error) -> Self {$/;"	f
+from	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/error.rs	/^    fn from(err: parser::Error) -> Self {$/;"	f
 from_ast	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/ast.rs	/^    pub fn from_ast($/;"	f
 from_ast	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^    pub fn from_ast($/;"	f
 from_ast	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^    pub fn from_ast(cx: &Ctxt, item: &syn::DeriveInput) -> Self {$/;"	f
@@ -2290,7 +2381,10 @@ from_env	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/liste
 from_err	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    pub fn from_err<E: Into<Error>>(err: E, request: HttpRequest) -> Self {$/;"	f
 from_escape_table	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^    fn from_escape_table(escape: u8, byte: u8) -> CharEscape {$/;"	f
 from_f64	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/number.rs	/^    pub fn from_f64(f: f64) -> Option<Number> {$/;"	f
+from_fields	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub fn from_fields($/;"	f
+from_fields_le	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub fn from_fields_le($/;"	f
 from_file	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn from_file<P: AsRef<Path>>(file: File, path: P) -> io::Result<NamedFile> {$/;"	f
+from_guid	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/winapi_support.rs	/^    pub fn from_guid(guid: guiddef::GUID) -> Result<Uuid, crate::Error> {$/;"	f
 from_i16	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/from_primitive.rs	/^            fn from_i16(n: i16) -> Option<Self> {$/;"	f
 from_i16	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/from_primitive.rs	/^        fn from_i16(n: i16) -> Option<Self> {$/;"	f
 from_i16	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/from_primitive.rs	/^    fn from_i16(n: i16) -> Option<Self>;$/;"	f
@@ -2340,14 +2434,18 @@ from_seed	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand
 from_seed	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.4.2/src/lib.rs	/^    fn from_seed(seed: Self::Seed) -> Self;$/;"	f
 from_slice	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/de.rs	/^    pub fn from_slice(bytes: &'a [u8]) -> Self {$/;"	f
 from_slice	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/de.rs	/^pub fn from_slice<'a, T>(v: &'a [u8]) -> Result<T>$/;"	f
+from_slice	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub fn from_slice(b: &[u8]) -> Result<Self, crate::Error> {$/;"	f
+from_slice	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub fn from_slice(b: &[u8]) -> Result<Uuid, crate::Error> {$/;"	f
 from_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/case.rs	/^    fn from_str(rename_all_str: &str) -> Result<Self, Self::Err> {$/;"	f
 from_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/de.rs	/^    fn from_str(s: &str) -> result::Result<Self, Self::Err> {$/;"	f
 from_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/de.rs	/^    pub fn from_str(s: &'a str) -> Self {$/;"	f
 from_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/de.rs	/^pub fn from_str<'a, T>(s: &'a str) -> Result<T>$/;"	f
 from_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^    fn from_str(s: &str) -> Result<Value, Error> {$/;"	f
+from_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn from_str(uuid_str: &str) -> Result<Self, Self::Err> {$/;"	f
 from_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/raw.rs	/^    pub fn from_string(json: String) -> Result<Box<Self>, Error> {$/;"	f
 from_string_unchecked	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/number.rs	/^    pub fn from_string_unchecked(n: String) -> Self {$/;"	f
 from_trait	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/de.rs	/^fn from_trait<'de, R, T>(read: R) -> Result<T>$/;"	f
+from_u128	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub fn from_u128(v: u128) -> Self {$/;"	f
 from_u16	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/from_primitive.rs	/^            fn from_u16(n: u16) -> Option<Self> {$/;"	f
 from_u16	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/from_primitive.rs	/^        fn from_u16(n: u16) -> Option<Self> {$/;"	f
 from_u16	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/from_primitive.rs	/^    fn from_u16(n: u16) -> Option<Self>;$/;"	f
@@ -2360,6 +2458,7 @@ from_u64	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde
 from_u8	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/from_primitive.rs	/^            fn from_u8(n: u8) -> Option<Self> {$/;"	f
 from_u8	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/from_primitive.rs	/^        fn from_u8(n: u8) -> Option<Self> {$/;"	f
 from_u8	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/from_primitive.rs	/^    fn from_u8(n: u8) -> Option<Self>;$/;"	f
+from_unix	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    pub fn from_unix($/;"	f
 from_utf8_lossy	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/export.rs	/^    pub fn from_utf8_lossy(bytes: &[u8]) -> &str {$/;"	f
 from_utf8_lossy	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/export.rs	/^    pub fn from_utf8_lossy(bytes: &[u8]) -> Cow<str> {$/;"	f
 from_value	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^pub fn from_value<T>(value: Value) -> Result<T, Error>$/;"	f
@@ -2374,6 +2473,9 @@ gen_ratio	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand
 generate	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/rngs/adapter/reseeding.rs	/^    fn generate(&mut self, results: &mut Self::Results) {$/;"	f
 generate	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.4.2/src/block.rs	/^    fn generate(&mut self, results: &mut Self::Results);$/;"	f
 generate_and_set	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.4.2/src/block.rs	/^    pub fn generate_and_set(&mut self, index: usize) {$/;"	f
+generate_sequence	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    fn generate_sequence(&self, _: u64, _: u32) -> u16 {$/;"	f
+generate_sequence	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    fn generate_sequence(&self, seconds: u64, subsec_nanos: u32) -> u16 {$/;"	f
+generate_sequence	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    fn generate_sequence(&self, seconds: u64, subsec_nanos: u32) -> u16;$/;"	f
 get	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/registry.rs	/^    pub fn get<A: ArbiterService + Actor<Context = Context<A>>>(&self) -> Addr<A> {$/;"	f
 get	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/registry.rs	/^    pub fn get<A: SystemService + Actor<Context = Context<A>>>(&mut self) -> Addr<A> {$/;"	f
 get	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^    pub fn get<'a>(req: &'a RequestHead, cfg: &AppConfig) -> Ref<'a, Self> {$/;"	f
@@ -2410,6 +2512,8 @@ get_ref	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-
 get_renames	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^fn get_renames<'a>($/;"	f
 get_ser_and_de	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^fn get_ser_and_de<'a, 'b, T, F>($/;"	f
 get_serde_meta_items	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^pub fn get_serde_meta_items(cx: &Ctxt, attr: &syn::Attribute) -> Result<Vec<syn::NestedMeta>, ()> {$/;"	f
+get_variant	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub fn get_variant(&self) -> Option<Variant> {$/;"	f
+get_version	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub fn get_version(&self) -> Option<Version> {$/;"	f
 get_weight	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/mod.rs	/^        fn get_weight<T>(item: &(u32, T)) -> u32 {$/;"	f
 get_where_predicates	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^fn get_where_predicates($/;"	f
 get_with_tokens	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^    fn get_with_tokens(self) -> Option<(TokenStream, T)> {$/;"	f
@@ -2483,6 +2587,10 @@ host	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web
 host	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^    pub fn host(&self) -> &str {$/;"	f
 host_and_port	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/actors/resolver.rs	/^    pub fn host_and_port<T: AsRef<str>>(host: T, port: u16) -> Connect {$/;"	f
 host_and_port	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/actors/resolver.rs	/^    pub fn host_and_port<T: AsRef<str>>(host: T, port: u16) -> Resolve {$/;"	f
+hyphenated_ref_too_small	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn hyphenated_ref_too_small() {$/;"	f
+hyphenated_ref_trailing	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn hyphenated_ref_trailing() {$/;"	f
+hyphenated_too_small	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn hyphenated_too_small() {$/;"	f
+hyphenated_trailing	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn hyphenated_trailing() {$/;"	f
 id	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-rt-1.0.0/src/system.rs	/^    pub fn id(&self) -> usize {$/;"	f
 identifier	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^    pub fn identifier(&self) -> Identifier {$/;"	f
 identifier	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/de.rs	/^        struct identifier ignored_any$/;"	s
@@ -2494,6 +2602,8 @@ ignore_integer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823
 ignore_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^    fn ignore_str(&mut self) -> Result<()> {$/;"	f
 ignore_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^    fn ignore_str(&mut self) -> Result<()>;$/;"	f
 ignore_value	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/de.rs	/^    fn ignore_value(&mut self) -> Result<()> {$/;"	f
+impl_adapter_from	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^macro_rules! impl_adapter_from {$/;"	d
+impl_adapter_traits	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^macro_rules! impl_adapter_traits {$/;"	d
 impl_as_byte_slice	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^macro_rules! impl_as_byte_slice {$/;"	d
 impl_as_byte_slice_arrays	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^macro_rules! impl_as_byte_slice_arrays {$/;"	d
 impl_copy_clone	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/value.rs	/^macro_rules! impl_copy_clone {$/;"	d
@@ -2618,6 +2728,7 @@ is_match	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_l
 is_match	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/filter/string.rs	/^    pub fn is_match(&self, s: &str) -> bool {$/;"	f
 is_nan	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/utils.rs	/^            fn is_nan(self) -> bool {$/;"	f
 is_nan	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/utils.rs	/^    fn is_nan(self) -> bool;$/;"	f
+is_nil	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub fn is_nil(&self) -> bool {$/;"	f
 is_none	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^    pub fn is_none(&self) -> bool {$/;"	f
 is_null	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^    pub fn is_null(&self) -> bool {$/;"	f
 is_number	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^    pub fn is_number(&self) -> bool {$/;"	f
@@ -2663,6 +2774,8 @@ len	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json
 len	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/map.rs	/^    pub fn len(&self) -> usize {$/;"	f
 len_hint	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/ser/mod.rs	/^    fn len_hint(&self) -> Option<usize> {$/;"	f
 len_hint	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/ser/mod.rs	/^    fn len_hint(&self) -> Option<usize>;$/;"	f
+len_matches_any	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/parser/mod.rs	/^fn len_matches_any(len: usize, crits: &[usize]) -> bool {$/;"	f
+len_matches_range	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/parser/mod.rs	/^fn len_matches_range(len: usize, min: usize, max: usize) -> bool {$/;"	f
 limit	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/form.rs	/^    pub fn limit(mut self, limit: usize) -> Self {$/;"	f
 limit	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/json.rs	/^    pub fn limit(mut self, limit: usize) -> Self {$/;"	f
 limit	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/types/payload.rs	/^    pub fn limit(mut self, limit: usize) -> Self {$/;"	f
@@ -2906,6 +3019,10 @@ new_transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/
 new_transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/errhandlers.rs	/^    fn new_transform(&self, service: S) -> Self::Future {$/;"	f
 new_transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn new_transform(&self, service: S) -> Self::Future {$/;"	f
 new_transform	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/normalize.rs	/^    fn new_transform(&self, service: S) -> Self::Future {$/;"	f
+new_v1	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    pub fn new_v1(ts: Timestamp, node_id: &[u8]) -> Result<Self, crate::Error> {$/;"	f
+new_v3	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v3.rs	/^    pub fn new_v3(namespace: &Uuid, name: &[u8]) -> Uuid {$/;"	f
+new_v4	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v4.rs	/^    pub fn new_v4() -> Self {$/;"	f
+new_v5	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v5.rs	/^    pub fn new_v5(namespace: &Uuid, name: &[u8]) -> Uuid {$/;"	f
 new_with_default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/env_logger-0.7.1/src/lib.rs	/^    fn new_with_default<E, V>(name: E, default: V) -> Self$/;"	f
 new_with_param	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/dirichlet.rs	/^    pub fn new_with_param(alpha: f64, size: usize) -> Dirichlet {$/;"	f
 new_with_timer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/deprecated.rs	/^    pub fn new_with_timer(timer: fn() -> u64) -> JitterRng {$/;"	f
@@ -3064,6 +3181,7 @@ parse_spec_valid_filter	/Users/bspaulding/.cargo/registry/src/github.com-1ecc629
 parse_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^    fn parse_str<'s>(&'s mut self, scratch: &'s mut Vec<u8>) -> Result<Reference<'a, 's, str>> {$/;"	f
 parse_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^    fn parse_str<'s>(&'s mut self, scratch: &'s mut Vec<u8>) -> Result<Reference<'de, 's, str>> {$/;"	f
 parse_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^    fn parse_str<'s>(&'s mut self, scratch: &'s mut Vec<u8>) -> Result<Reference<'de, 's, str>>;$/;"	f
+parse_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/parser/mod.rs	/^    pub fn parse_str(mut input: &str) -> Result<Uuid, crate::Error> {$/;"	f
 parse_str_bytes	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^    fn parse_str_bytes<'s, T, F>($/;"	f
 parse_str_bytes	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^    fn parse_str_bytes<'s, T: ?Sized, F>($/;"	f
 parse_str_raw	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/read.rs	/^    fn parse_str_raw<'s>($/;"	f
@@ -3375,6 +3493,9 @@ serialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serd
 serialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/number.rs	/^    fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>$/;"	f
 serialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/raw.rs	/^    fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>$/;"	f
 serialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/ser.rs	/^    fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>$/;"	f
+serialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/compact.rs	/^pub fn serialize<S>(u: &crate::Uuid, serializer: S) -> Result<S::Ok, S::Error>$/;"	f
+serialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/serde_support.rs	/^    fn serialize<S: Serializer>($/;"	f
+serialize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/slog_support.rs	/^    fn serialize($/;"	f
 serialize_adjacently_tagged_variant	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/ser.rs	/^fn serialize_adjacently_tagged_variant($/;"	f
 serialize_body	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/ser.rs	/^fn serialize_body(cont: &Container, params: &Parameters) -> Fragment {$/;"	f
 serialize_bool	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/ser.rs	/^        fn serialize_bool(self, v: bool) -> Result<Content, E> {$/;"	f
@@ -3685,6 +3806,8 @@ set_service_data	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec8
 set_status_code	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn set_status_code(mut self, status: StatusCode) -> Self {$/;"	f
 set_stream	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/deprecated.rs	/^    pub fn set_stream(&mut self, stream: u64) {$/;"	f
 set_true	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^    fn set_true<A: ToTokens>(&mut self, obj: A) {$/;"	f
+set_variant	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub fn set_variant(&mut self, v: crate::Variant) -> &mut Self {$/;"	f
+set_version	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/builder/mod.rs	/^    pub fn set_version(&mut self, v: crate::Version) -> &mut Self {$/;"	f
 set_word_pos	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/deprecated.rs	/^    pub fn set_word_pos(&mut self, word_offset: u128) {$/;"	f
 should_retry	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.4.2/src/error.rs	/^    pub fn should_retry(self) -> bool {$/;"	f
 should_wait	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.4.2/src/error.rs	/^    pub fn should_wait(self) -> bool {$/;"	f
@@ -3696,6 +3819,10 @@ shutdown_timeout	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec8
 signal	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/address/channel.rs	/^    fn signal(&self) {$/;"	f
 simd_impl	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/integer.rs	/^macro_rules! simd_impl {$/;"	d
 simd_impl	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/utils.rs	/^macro_rules! simd_impl {$/;"	d
+simple_ref_too_small	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn simple_ref_too_small() {$/;"	f
+simple_ref_trailing	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn simple_ref_trailing() {$/;"	f
+simple_too_small	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn simple_too_small() {$/;"	f
+simple_trailing	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn simple_trailing() {$/;"	f
 size	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/middleware/logger.rs	/^    fn size(&self) -> BodySize {$/;"	f
 size_hint	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/mod.rs	/^    fn size_hint(&self) -> (usize, Option<usize>) {$/;"	f
 size_hint	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/index.rs	/^    fn size_hint(&self) -> (usize, Option<usize>) {$/;"	f
@@ -3714,6 +3841,7 @@ skip_serializing_if	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9
 sort	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/cauchy.rs	/^    fn sort(numbers: &mut [f64]) {$/;"	f
 source	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/std_error.rs	/^    fn source(&self) -> Option<&(Error + 'static)> {$/;"	f
 source	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/error.rs	/^    fn source(&self) -> Option<&(dyn error::Error + 'static)> {$/;"	f
+source	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/error.rs	/^        fn source(&self) -> Option<&(dyn error::Error + 'static)> {$/;"	f
 spanned_tokens	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/internals/attr.rs	/^fn spanned_tokens(s: &syn::LitStr) -> parse::Result<TokenStream> {$/;"	f
 spawn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/actor.rs	/^    fn spawn<F>(&mut self, fut: F) -> SpawnHandle$/;"	f
 spawn	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/context.rs	/^    fn spawn(self, ctx: &mut A::Context) {$/;"	f
@@ -3811,6 +3939,8 @@ terminate	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/acti
 terminate	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-actors-2.0.0/src/context.rs	/^    fn terminate(&mut self) {$/;"	f
 terminate	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-actors-2.0.0/src/ws.rs	/^    fn terminate(&mut self) {$/;"	f
 test_alphanumeric	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/other.rs	/^    fn test_alphanumeric() {$/;"	f
+test_as_bytes	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_as_bytes() {$/;"	f
+test_as_fields	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_as_fields() {$/;"	f
 test_average	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/bernoulli.rs	/^    fn test_average() {$/;"	f
 test_beta	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/gamma.rs	/^    fn test_beta() {$/;"	f
 test_beta_invalid_dof	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/gamma.rs	/^    fn test_beta_invalid_dof() {$/;"	f
@@ -3818,6 +3948,7 @@ test_binomial	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/
 test_binomial_end_points	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/binomial.rs	/^    fn test_binomial_end_points() {$/;"	f
 test_binomial_invalid_lambda_neg	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/binomial.rs	/^    fn test_binomial_invalid_lambda_neg() {$/;"	f
 test_binomial_mean_and_variance	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/binomial.rs	/^    fn test_binomial_mean_and_variance<R: Rng>(n: u64, p: f64, rng: &mut R) {$/;"	f
+test_bytes_roundtrip	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_bytes_roundtrip() {$/;"	f
 test_cap	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/address/channel.rs	/^    fn test_cap() {$/;"	f
 test_cauchy_invalid_scale_neg	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/cauchy.rs	/^    fn test_cauchy_invalid_scale_neg() {$/;"	f
 test_cauchy_invalid_scale_zero	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/cauchy.rs	/^    fn test_cauchy_invalid_scale_zero() {$/;"	f
@@ -3844,6 +3975,9 @@ test_exp_invalid_lambda_zero	/Users/bspaulding/.cargo/registry/src/github.com-1e
 test_f	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/gamma.rs	/^    fn test_f() {$/;"	f
 test_f32	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/float.rs	/^    macro_rules! test_f32 {$/;"	d
 test_f64	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/float.rs	/^    macro_rules! test_f64 {$/;"	d
+test_fields_le_are_actually_le	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_fields_le_are_actually_le() {$/;"	f
+test_fields_le_roundtrip	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_fields_le_roundtrip() {$/;"	f
+test_fields_roundtrip	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_fields_roundtrip() {$/;"	f
 test_fill	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^    fn test_fill() {$/;"	f
 test_fill_bytes_default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^    fn test_fill_bytes_default() {$/;"	f
 test_fill_empty	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^    fn test_fill_empty() {$/;"	f
@@ -3851,35 +3985,56 @@ test_float_assertions	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299d
 test_floats	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/uniform.rs	/^    fn test_floats() {$/;"	f
 test_fmt_debug	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn test_fmt_debug() {$/;"	f
 test_forwarded	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/info.rs	/^    fn test_forwarded() {$/;"	f
+test_from_bytes	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_from_bytes() {$/;"	f
+test_from_fields	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_from_fields() {$/;"	f
+test_from_fields_le	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_from_fields_le() {$/;"	f
+test_from_guid	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/winapi_support.rs	/^    fn test_from_guid() {$/;"	f
+test_from_slice	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_from_slice() {$/;"	f
+test_from_u128	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_from_u128() {$/;"	f
+test_from_u128_le	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_from_u128_le() {$/;"	f
 test_gen_bool	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^    fn test_gen_bool() {$/;"	f
 test_gen_range	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^    fn test_gen_range() {$/;"	f
 test_gen_range_panic_int	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^    fn test_gen_range_panic_int() {$/;"	f
 test_gen_range_panic_usize	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^    fn test_gen_range_panic_usize() {$/;"	f
 test_gen_ratio_average	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^    fn test_gen_ratio_average() {$/;"	f
+test_get_variant	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_get_variant() {$/;"	f
+test_get_version	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v4.rs	/^    fn test_get_version() {$/;"	f
+test_get_version	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v5.rs	/^    fn test_get_version() {$/;"	f
+test_get_version_v3	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_get_version_v3() {$/;"	f
+test_guid_roundtrip	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/winapi_support.rs	/^    fn test_guid_roundtrip() {$/;"	f
 test_handshake	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-actors-2.0.0/src/ws.rs	/^    fn test_handshake() {$/;"	f
 test_header	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_header() {$/;"	f
 test_host	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_host() {$/;"	f
 test_host_scheme	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_host_scheme() {$/;"	f
 test_host_without_header	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_host_without_header() {$/;"	f
+test_hyphenated	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v5.rs	/^    fn test_hyphenated() {$/;"	f
 test_integers	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/integer.rs	/^    fn test_integers() {$/;"	f
 test_integers	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/uniform.rs	/^    fn test_integers() {$/;"	f
 test_iter	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/mod.rs	/^        fn test_iter<R: Rng + ?Sized, Iter: Iterator<Item=usize> + Clone>(r: &mut R, iter: Iter) {$/;"	f
 test_iterator_choose	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/mod.rs	/^    fn test_iterator_choose() {$/;"	f
+test_iterbytes_impl_for_uuid	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_iterbytes_impl_for_uuid() {$/;"	f
 test_json_payload_error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^    fn test_json_payload_error() {$/;"	f
 test_log_normal	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/normal.rs	/^    fn test_log_normal() {$/;"	f
 test_log_normal_invalid_sd	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/normal.rs	/^    fn test_log_normal_invalid_sd() {$/;"	f
 test_methods	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_methods() {$/;"	f
 test_misc	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/other.rs	/^    fn test_misc() {$/;"	f
 test_new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/triangular.rs	/^    fn test_new() {$/;"	f
+test_new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v3.rs	/^    fn test_new() {$/;"	f
+test_new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v4.rs	/^    fn test_new() {$/;"	f
+test_new	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v5.rs	/^    fn test_new() {$/;"	f
+test_new_v1	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    fn test_new_v1() {$/;"	f
+test_nil	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_nil() {$/;"	f
 test_no_request_cookies	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn test_no_request_cookies() {$/;"	f
 test_normal	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/normal.rs	/^    fn test_normal() {$/;"	f
 test_normal_invalid_sd	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/normal.rs	/^    fn test_normal_invalid_sd() {$/;"	f
 test_parse	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/range.rs	/^    fn test_parse() {$/;"	f
+test_parse_uuid_v4	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/parser/mod.rs	/^    fn test_parse_uuid_v4() {$/;"	f
 test_partial_shuffle	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/mod.rs	/^    fn test_partial_shuffle() {$/;"	f
 test_poisson_10	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/poisson.rs	/^    fn test_poisson_10() {$/;"	f
 test_poisson_15	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/poisson.rs	/^    fn test_poisson_15() {$/;"	f
 test_poisson_invalid_lambda_neg	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/poisson.rs	/^    fn test_poisson_invalid_lambda_neg() {$/;"	f
 test_poisson_invalid_lambda_zero	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/poisson.rs	/^    fn test_poisson_invalid_lambda_zero() {$/;"	f
+test_predefined_namespaces	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_predefined_namespaces() {$/;"	f
 test_preds	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/guard.rs	/^    fn test_preds() {$/;"	f
 test_query_payload_error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^    fn test_query_payload_error() {$/;"	f
 test_random	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^    fn test_random() {$/;"	f
@@ -3902,23 +4057,44 @@ test_sample_slice	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec
 test_sample_slice_boundaries	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/mod.rs	/^    fn test_sample_slice_boundaries() {$/;"	f
 test_seed_from_u64	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand_core-0.4.2/src/lib.rs	/^    fn test_seed_from_u64() {$/;"	f
 test_send_over_limit	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-0.9.0/src/address/mod.rs	/^    fn test_send_over_limit() {$/;"	f
+test_serialize_compact	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/compact.rs	/^    fn test_serialize_compact() {$/;"	f
+test_serialize_compact	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/serde_support.rs	/^    fn test_serialize_compact() {$/;"	f
+test_serialize_readable	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/serde_support.rs	/^    fn test_serialize_readable() {$/;"	f
 test_service_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/service.rs	/^    fn test_service_request() {$/;"	f
 test_shuffle	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/mod.rs	/^    fn test_shuffle() {$/;"	f
 test_slice_choose	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/mod.rs	/^    fn test_slice_choose() {$/;"	f
+test_slog_kv	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/slog_support.rs	/^    fn test_slog_kv() {$/;"	f
 test_stdrng_construction	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/rngs/std.rs	/^    fn test_stdrng_construction() {$/;"	f
+test_string_roundtrip	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_string_roundtrip() {$/;"	f
 test_t	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/gamma.rs	/^    fn test_t() {$/;"	f
 test_thread_rng	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/rngs/thread.rs	/^    fn test_thread_rng() {$/;"	f
 test_timer	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/deprecated.rs	/^    pub fn test_timer(&mut self) -> Result<u8, rngs::TimerError> {$/;"	f
+test_to_hyphenated_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_to_hyphenated_string() {$/;"	f
+test_to_hyphenated_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v3.rs	/^    fn test_to_hyphenated_string() {$/;"	f
+test_to_simple_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_to_simple_string() {$/;"	f
+test_to_simple_string_matching	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_to_simple_string_matching() {$/;"	f
+test_to_urn_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_to_urn_string() {$/;"	f
 test_trivial	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/bernoulli.rs	/^    fn test_trivial() {$/;"	f
+test_u128_le_is_actually_le	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_u128_le_is_actually_le() {$/;"	f
+test_u128_le_roundtrip	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_u128_le_roundtrip() {$/;"	f
+test_u128_roundtrip	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_u128_roundtrip() {$/;"	f
 test_uniform_bad_limits_equal_int	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/uniform.rs	/^    fn test_uniform_bad_limits_equal_int() {$/;"	f
 test_uniform_bad_limits_flipped_int	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/uniform.rs	/^    fn test_uniform_bad_limits_flipped_int() {$/;"	f
 test_uniform_from_std_range	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/uniform.rs	/^    fn test_uniform_from_std_range() {$/;"	f
 test_uniform_from_std_range_inclusive	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/uniform.rs	/^    fn test_uniform_from_std_range_inclusive() {$/;"	f
 test_uniform_good_limits_equal_int	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/uniform.rs	/^    fn test_uniform_good_limits_equal_int() {$/;"	f
+test_upper_lower_hex	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_upper_lower_hex() {$/;"	f
 test_url_for	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn test_url_for() {$/;"	f
 test_url_for_external	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn test_url_for_external() {$/;"	f
 test_url_for_static	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    fn test_url_for_static() {$/;"	f
 test_urlencoded_error	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/error.rs	/^    fn test_urlencoded_error() {$/;"	f
+test_uuid_compare	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_uuid_compare() {$/;"	f
+test_uuid_default	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_uuid_default() {$/;"	f
+test_uuid_display	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_uuid_display() {$/;"	f
+test_uuid_lowerhex	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_uuid_lowerhex() {$/;"	f
+test_uuid_operator_eq	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_uuid_operator_eq() {$/;"	f
+test_uuid_to_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_uuid_to_string() {$/;"	f
+test_uuid_upperhex	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    fn test_uuid_upperhex() {$/;"	f
 test_weighted	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/seq/mod.rs	/^    fn test_weighted() {$/;"	f
 test_weighted_choice	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/mod.rs	/^    fn test_weighted_choice() {$/;"	f
 test_weighted_choice_no_items	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/mod.rs	/^    fn test_weighted_choice_no_items() {$/;"	f
@@ -3948,6 +4124,8 @@ to	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2
 to_bits	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/utils.rs	/^            fn to_bits(self) -> Self::Bits {$/;"	f
 to_bits	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/distributions/utils.rs	/^    fn to_bits(self) -> Self::Bits;$/;"	f
 to_compile_errors	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/lib.rs	/^fn to_compile_errors(errors: Vec<syn::Error>) -> proc_macro2::TokenStream {$/;"	f
+to_fields_le	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub fn to_fields_le(&self) -> (u32, u16, u16, &[u8; 8]) {$/;"	f
+to_guid	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/winapi_support.rs	/^    pub fn to_guid(&self) -> guiddef::GUID {$/;"	f
 to_http_parts	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn to_http_parts(mut self) -> (HttpRequest, Payload) {$/;"	f
 to_http_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn to_http_request(mut self) -> HttpRequest {$/;"	f
 to_le	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/rand-0.6.5/src/lib.rs	/^            fn to_le(&mut self) {$/;"	f
@@ -3959,8 +4137,10 @@ to_srv_request	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823
 to_srv_response	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/test.rs	/^    pub fn to_srv_response<B>(self, res: HttpResponse<B>) -> ServiceResponse<B> {$/;"	f
 to_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^pub fn to_string<T: ?Sized>(value: &T) -> Result<String>$/;"	f
 to_string_pretty	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^pub fn to_string_pretty<T: ?Sized>(value: &T) -> Result<String>$/;"	f
+to_timestamp	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/v1.rs	/^    pub fn to_timestamp(&self) -> Option<Timestamp> {$/;"	f
 to_tokens	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/de.rs	/^    fn to_tokens(&self, tokens: &mut TokenStream) {$/;"	f
 to_tokens	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/fragment.rs	/^    fn to_tokens(&self, out: &mut TokenStream) {$/;"	f
+to_u128_le	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/lib.rs	/^    pub fn to_u128_le(&self) -> u128 {$/;"	f
 to_value	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/mod.rs	/^pub fn to_value<T>(value: T) -> Result<Value, Error>$/;"	f
 to_vec	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^pub fn to_vec<T: ?Sized>(value: &T) -> Result<Vec<u8>>$/;"	f
 to_vec_pretty	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/ser.rs	/^pub fn to_vec_pretty<T: ?Sized>(value: &T) -> Result<Vec<u8>>$/;"	f
@@ -4039,6 +4219,10 @@ url	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-
 url_for	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn url_for<U, I>($/;"	f
 url_for	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/rmap.rs	/^    pub fn url_for<U, I>($/;"	f
 url_for_static	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-web-2.0.0/src/request.rs	/^    pub fn url_for_static(&self, name: &str) -> Result<url::Url, UrlGenerationError> {$/;"	f
+urn_ref_too_small	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn urn_ref_too_small() {$/;"	f
+urn_ref_trailing	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn urn_ref_trailing() {$/;"	f
+urn_too_small	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn urn_too_small() {$/;"	f
+urn_trailing	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/adapter/mod.rs	/^    fn urn_trailing() {$/;"	f
 use_etag	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn use_etag(mut self, value: bool) -> Self {$/;"	f
 use_etag	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/named.rs	/^    pub fn use_etag(mut self, value: bool) -> Self {$/;"	f
 use_guards	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/actix-files-0.2.1/src/lib.rs	/^    pub fn use_guards<G: Guard + 'static>(mut self, guards: G) -> Self {$/;"	f
@@ -4096,6 +4280,7 @@ visit_bytes	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/se
 visit_bytes	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/de.rs	/^        fn visit_bytes<E>(self, v: &[u8]) -> Result<Self::Value, E>$/;"	f
 visit_bytes	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/de.rs	/^        fn visit_bytes<F>(self, value: &[u8]) -> Result<Self::Value, F>$/;"	f
 visit_bytes	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.104/src/de.rs	/^        fn visit_bytes<__E>(self, __value: &[u8]) -> _serde::export::Result<Self::Value, __E>$/;"	f
+visit_bytes	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/serde_support.rs	/^                fn visit_bytes<E: de::Error>($/;"	f
 visit_char	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/impls.rs	/^    fn visit_char<E>(self, v: char) -> Result<Self::Value, E>$/;"	f
 visit_char	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/mod.rs	/^    fn visit_char<E>(self, v: char) -> Result<Self::Value, E>$/;"	f
 visit_char	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/de.rs	/^        fn visit_char<F>(self, value: char) -> Result<Self::Value, F>$/;"	f
@@ -4208,6 +4393,7 @@ visit_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serd
 visit_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/raw.rs	/^    fn visit_str<E>(self, s: &str) -> Result<Self::Value, E>$/;"	f
 visit_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^            fn visit_str<E>(self, value: &str) -> Result<Value, E>$/;"	f
 visit_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.48/src/value/de.rs	/^    fn visit_str<E>(self, s: &str) -> Result<Self::Value, E>$/;"	f
+visit_str	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/uuid-0.8.1/src/serde_support.rs	/^                fn visit_str<E: de::Error>($/;"	f
 visit_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/impls.rs	/^    fn visit_string<E>(self, v: String) -> Result<Self::Value, E>$/;"	f
 visit_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/de/mod.rs	/^    fn visit_string<E>(self, v: String) -> Result<Self::Value, E>$/;"	f
 visit_string	/Users/bspaulding/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.104/src/private/de.rs	/^        fn visit_string<E>(self, v: String) -> Result<Self::Value, E>$/;"	f
