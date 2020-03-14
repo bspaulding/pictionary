@@ -1,21 +1,91 @@
 <script>
 	let room;
+	let inputRoom;
 	let createRoomFailed = false;
-	let words = ["monkey", "banana", "motorcycle", "mountain"];
-	let currentWord = words[0];
+	let currentWord;
+	let socket;
+	let paths = [[]];
+	function closePath() {
+		paths = [...paths, []];
+	}
+	function pointCreated(point) {
+		paths = [...paths.slice(0, paths.length - 1), [...paths[paths.length - 1], point]];
+	}
+
+	function handleAction(action) {
+		switch (action.type) {
+			case 'PATH_CLOSED':
+				closePath();
+				return;
+			case 'POINT_CREATED':
+				pointCreated(action.payload);
+				return;
+			case 'MODEL_STATE':
+				paths = action.payload.paths;
+				currentWord = action.payload.currentWord;
+				return;
+		}
+	}
+
+	function socketError(e) {
+		console.log("socket error:", e);
+	}
+
+	function socketClose() {
+		console.log("socket closed");
+		room = undefined;
+		paths = [[]];
+	}
+
+	let isSocketOpen = false;
+	function socketOpen() {
+		console.log('socket open');
+		isSocketOpen = true;
+	}
+
+	function sendIfOpen(event) {
+		if (!isSocketOpen) {
+			return;
+		}
+
+		socket.send(JSON.stringify(event));
+	}
+
+	function joinInputRoom() {
+		joinRoom(inputRoom);
+	}
+
+	function socketMessage(event) {
+		const action = JSON.parse(event.data);
+		console.log("Received action: ", action);
+		handleAction(action);
+	}
+
+	async function joinRoom(roomToJoin) {
+			socket = new WebSocket(`ws://${window.location.host}/api/v1/rooms/${roomToJoin}/ws`);
+			socket.onerror = socketError;
+			socket.onclose = socketClose;
+			socket.onopen = () => {
+				room = roomToJoin;
+				inputRoom = '';
+				socketOpen();
+			};
+			socket.onmessage = socketMessage;
+			console.log(socket);
+	}
 
 	async function createRoom() {
 		const response = await fetch("/api/v1/rooms", { method: "POST" });
 		if (response.ok) {
 			const json = await response.json();
 			room = json.room;
+			joinRoom(room);
 		} else {
 			createRoomFailed = true;
 		}
 	}
 
 	let isDrawing = false;
-	let paths = [[]];
 	function boardMouseDown(e) {
 		e.preventDefault();
 		e.stopImmediatePropagation();
@@ -25,13 +95,18 @@
 		e.preventDefault();
 		e.stopImmediatePropagation();
 		isDrawing = false;
-		paths = [...paths, []];
+		const action = { type: 'PATH_CLOSED' };
+		handleAction(action);
+		sendIfOpen(action);
 	}
 	function boardMouseMove(e) {
 		e.preventDefault();
 		e.stopImmediatePropagation();
 		if (isDrawing) {
-			paths = [...paths.slice(0, paths.length - 1), [...paths[paths.length - 1], { x: e.offsetX, y: e.offsetY }]];
+			const point = { x: e.offsetX, y: e.offsetY };
+			const action = { type: 'POINT_CREATED', payload: point };
+			handleAction(action);
+			sendIfOpen(action);
 		}
 	}
 </script>
@@ -57,7 +132,12 @@
 		<p class="error">Uh-oh, something went wrong creating a new game, please try again!</p>
 		{/if}
 		<button on:click={createRoom}>
-			Create Game
+			Create a Game
+		</button>
+		<p>or</p>
+		<input bind:value={inputRoom} />
+		<button on:click={joinInputRoom}>
+			Join a Game
 		</button>
 	{/if}
 </main>
