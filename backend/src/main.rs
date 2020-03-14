@@ -4,6 +4,7 @@ use actix_files as fs;
 use actix_web::{web, App, Error, HttpRequest, HttpResponse, HttpServer, Responder, middleware::Logger};
 use actix_web_actors::ws;
 use env_logger;
+use rand::seq::SliceRandom;
 use serde::{Deserialize, Serialize};
 use std::collections::{HashMap, HashSet};
 use uuid::Uuid;
@@ -145,11 +146,13 @@ struct PictionaryModel {
 
 impl Default for PictionaryModel {
     fn default() -> PictionaryModel {
+        let mut words = PictionaryWords::default();
+        let current_word = words.easy.pop().unwrap();
         PictionaryModel {
-            current_word: String::from("monkey"),
+            current_word,
             used_words: vec![],
             paths: vec![vec![]],
-            words: PictionaryWords::default()
+            words
         }
     }
 }
@@ -167,9 +170,14 @@ fn strs_to_strings(xs: Vec<&str>) -> Vec<String> {
 
 impl Default for PictionaryWords {
     fn default() -> PictionaryWords {
+        let mut rng = rand::thread_rng();
+        let mut easy = strs_to_strings(vec!["Swing","Coat","Shoe","Ocean","Dog","Mouth","Milk","Duck","Skateboard","Bird","Mouse","Whale","Jacket","Shirt","Hippo","Beach","Egg","Cookie","Cheese","Skip","Drum","homework","glue","eraser","peace","panic","alarm","far","comfy","dripping","boring","hot","cold","parents","closet","laugh","falling","sleepover","calendar","sunscreen","panda","detention","hair","ice skating","afraid","dictionary","homerun","root beer float","hibernation","street sweeper","spitball","drinking fountain","imagination","Angry","Fireworks","Pumpkin","Baby","Flower","Rainbow","Beard","Flying saucer","Recycle","Bible","Giraffe","Sand castle","Bikini","Glasses","Snowflake","Book","High heel","Stairs","Bucket","Ice cream cone","Starfish","Bumble bee","Igloo","Strawberry","Butterfly","Lady bug","Sun","Camera","Lamp","Tire","Cat","Lion","Toast","Church","Mailbox","Toothbrush","Crayon","Night","Toothpaste","Dolphin","Nose","Truck","Egg","Olympics","Volleyball","Eiffel Tower","Peanut","half cardboard","oar","baby-sitter","drip","shampoo","point","time machine","yardstick","think","lace darts","world","avocado bleach","shower","curtain","extension cord dent","birthday lap","sandbox","bruise","quicksand","fog","gasoline","pocket","honk","sponge","rim","bride","wig","zipper","wag","letter opener","fiddle","water buffalo","pilot","brand pail","baguette","rib mascot","fireman","pole zoo sushi","fizz ceiling","fan bald","banister punk","post office","season","Internet","chess","puppet","chime","ivy"]);
+        easy.shuffle(&mut rng);
+        let mut hard = strs_to_strings(vec!["applause","application","avocato","award","badge","baggage","baker","barber","bargain","basket","bedbug","bettle","beggar","birthday","biscuit","bleach","blinds","bobsled","Bonnet","bookend","boundary","brain","bruise","bubble"]);
+        hard.shuffle(&mut rng);
         PictionaryWords {
-            easy: strs_to_strings(vec!["Swing","Coat","Shoe","Ocean","Dog","Mouth","Milk","Duck","Skateboard","Bird","Mouse","Whale","Jacket","Shirt","Hippo","Beach","Egg","Cookie","Cheese","Skip","Drum","homework","glue","eraser","peace","panic","alarm","far","comfy","dripping","boring","hot","cold","parents","closet","laugh","falling","sleepover","calendar","sunscreen","panda","detention","hair","ice skating","afraid","dictionary","homerun","root beer float","hibernation","street sweeper","spitball","drinking fountain","imagination","Angry","Fireworks","Pumpkin","Baby","Flower","Rainbow","Beard","Flying saucer","Recycle","Bible","Giraffe","Sand castle","Bikini","Glasses","Snowflake","Book","High heel","Stairs","Bucket","Ice cream cone","Starfish","Bumble bee","Igloo","Strawberry","Butterfly","Lady bug","Sun","Camera","Lamp","Tire","Cat","Lion","Toast","Church","Mailbox","Toothbrush","Crayon","Night","Toothpaste","Dolphin","Nose","Truck","Egg","Olympics","Volleyball","Eiffel Tower","Peanut","half cardboard","oar","baby-sitter","drip","shampoo","point","time machine","yardstick","think","lace darts","world","avocado bleach","shower","curtain","extension cord dent","birthday lap","sandbox","bruise","quicksand","fog","gasoline","pocket","honk","sponge","rim","bride","wig","zipper","wag","letter opener","fiddle","water buffalo","pilot","brand pail","baguette","rib mascot","fireman","pole zoo sushi","fizz ceiling","fan bald","banister punk","post office","season","Internet","chess","puppet","chime","ivy"]),
-            hard: strs_to_strings(vec!["applause","application","avocato","award","badge","baggage","baker","barber","bargain","basket","bedbug","bettle","beggar","birthday","biscuit","bleach","blinds","bobsled","Bonnet","bookend","boundary","brain","bruise","bubble"])
+            easy,
+            hard
         }
     }
 }
@@ -290,6 +298,7 @@ impl Handler<WsRoomEvent> for PictionaryServer {
                     model.words.easy.pop().unwrap()
                 });
                 model.paths.clear();
+                model.paths.push(vec![]);
                 responses.push(WsEvent::NextWordCompleted(model.current_word.clone()));
             },
             _ => ()
