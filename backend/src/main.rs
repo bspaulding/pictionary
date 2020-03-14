@@ -33,13 +33,6 @@ struct PictionaryWebSocketSession {
     addr: Addr<PictionaryServer>
 }
 
-#[derive(Serialize)]
-struct ModelStateAction {
-    #[serde(rename="type")]
-    event_type: String,
-    payload: PictionaryModel
-}
-
 impl Actor for PictionaryWebSocketSession {
     type Context = ws::WebsocketContext<Self>;
 
@@ -54,10 +47,7 @@ impl Actor for PictionaryWebSocketSession {
             match response {
                 Ok(response) => {
                     actor.id = response.id;
-                    context.text(serde_json::to_string(&ModelStateAction {
-                        event_type: String::from("MODEL_STATE"),
-                        payload: response.model
-                    }).unwrap())
+                    context.text(serde_json::to_string(&WsEvent::ModelState(response.model)).unwrap())
                 },
                 _ => context.stop()
             }
@@ -84,10 +74,12 @@ impl Handler<WsEvent> for PictionaryWebSocketSession {
 #[derive(Clone, Debug, Deserialize, Serialize, Message)]
 #[serde(rename_all="camelCase")]
 #[rtype(result = "()")]
-struct WsEvent {
-    #[serde(rename = "type")]
-    event_type: String,
-    payload: Option<Point>
+enum WsEvent {
+    PointCreated(Point),
+    PathClosed,
+    NextWordStart,
+    NextWordCompleted(String),
+    ModelState(PictionaryModel),
 }
 
 #[derive(Debug, Serialize, Message)]
@@ -141,13 +133,14 @@ struct Point {
     y: u32,
 }
 
-#[derive(Clone, Debug, Message, Serialize)]
+#[derive(Clone, Debug, Message, Deserialize, Serialize)]
 #[serde(rename_all = "camelCase")]
 #[rtype(result = "()")]
 struct PictionaryModel {
     current_word: String,
     used_words: Vec<String>,
     paths: Vec<Vec<Point>>,
+    words: PictionaryWords
 }
 
 impl Default for PictionaryModel {
@@ -156,6 +149,27 @@ impl Default for PictionaryModel {
             current_word: String::from("monkey"),
             used_words: vec![],
             paths: vec![vec![]],
+            words: PictionaryWords::default()
+        }
+    }
+}
+
+#[derive(Clone, Debug, Deserialize, Serialize)]
+#[serde(rename_all="camelCase")]
+struct PictionaryWords {
+    easy: Vec<String>,
+    hard: Vec<String>
+}
+
+fn strs_to_strings(xs: Vec<&str>) -> Vec<String> {
+    xs.iter().map(|s| s.to_string()).collect()
+}
+
+impl Default for PictionaryWords {
+    fn default() -> PictionaryWords {
+        PictionaryWords {
+            easy: strs_to_strings(vec!["Swing","Coat","Shoe","Ocean","Dog","Mouth","Milk","Duck","Skateboard","Bird","Mouse","Whale","Jacket","Shirt","Hippo","Beach","Egg","Cookie","Cheese","Skip","Drum","homework","glue","eraser","peace","panic","alarm","far","comfy","dripping","boring","hot","cold","parents","closet","laugh","falling","sleepover","calendar","sunscreen","panda","detention","hair","ice skating","afraid","dictionary","homerun","root beer float","hibernation","street sweeper","spitball","drinking fountain","imagination","Angry","Fireworks","Pumpkin","Baby","Flower","Rainbow","Beard","Flying saucer","Recycle","Bible","Giraffe","Sand castle","Bikini","Glasses","Snowflake","Book","High heel","Stairs","Bucket","Ice cream cone","Starfish","Bumble bee","Igloo","Strawberry","Butterfly","Lady bug","Sun","Camera","Lamp","Tire","Cat","Lion","Toast","Church","Mailbox","Toothbrush","Crayon","Night","Toothpaste","Dolphin","Nose","Truck","Egg","Olympics","Volleyball","Eiffel Tower","Peanut","half cardboard","oar","baby-sitter","drip","shampoo","point","time machine","yardstick","think","lace darts","world","avocado bleach","shower","curtain","extension cord dent","birthday lap","sandbox","bruise","quicksand","fog","gasoline","pocket","honk","sponge","rim","bride","wig","zipper","wag","letter opener","fiddle","water buffalo","pilot","brand pail","baguette","rib mascot","fireman","pole zoo sushi","fizz ceiling","fan bald","banister punk","post office","season","Internet","chess","puppet","chime","ivy"]),
+            hard: strs_to_strings(vec!["applause","application","avocato","award","badge","baggage","baker","barber","bargain","basket","bedbug","bettle","beggar","birthday","biscuit","bleach","blinds","bobsled","Bonnet","bookend","boundary","brain","bruise","bubble"])
         }
     }
 }
@@ -262,12 +276,21 @@ impl Handler<WsRoomEvent> for PictionaryServer {
     fn handle(&mut self, msg: WsRoomEvent, _: &mut Self::Context) {
         // TODO: don't re-send to the sender
         let model = self.models_by_room_id.get_mut(&msg.room_id).unwrap();
-        match msg.event.event_type.as_ref() {
-            "POINT_CREATED" => {
-                model.paths.last_mut().unwrap().push(msg.event.clone().payload.unwrap());
+        let mut responses = vec![];
+        match &msg.event {
+            WsEvent::PointCreated(point) => {
+                model.paths.last_mut().unwrap().push(point.clone());
             },
-            "PATH_CLOSED" => {
+            WsEvent::PathClosed => {
                 model.paths.push(vec![]);
+            },
+            WsEvent::NextWordStart => {
+                model.current_word = model.words.easy.pop().unwrap_or_else(|| {
+                    model.words = PictionaryWords::default();
+                    model.words.easy.pop().unwrap()
+                });
+                model.paths.clear();
+                responses.push(WsEvent::NextWordCompleted(model.current_word.clone()));
             },
             _ => ()
         }
@@ -275,6 +298,9 @@ impl Handler<WsRoomEvent> for PictionaryServer {
         for session_id in session_ids {
             if let Some(addr) = self.sessions_by_id.get(session_id) {
                 addr.do_send(msg.event.clone()).unwrap();
+                for response in responses.iter() {
+                    addr.do_send(response.clone()).unwrap();
+                }
             }
         }
     }

@@ -13,16 +13,21 @@
 	}
 
 	function handleAction(action) {
+		console.log('Handling action: ', action);
 		switch (action.type) {
-			case 'PATH_CLOSED':
+			case 'pathClosed':
 				closePath();
 				return;
-			case 'POINT_CREATED':
+			case 'pointCreated':
 				pointCreated(action.payload);
 				return;
-			case 'MODEL_STATE':
+			case 'modelState':
 				paths = action.payload.paths;
 				currentWord = action.payload.currentWord;
+				return;
+			case 'nextWordCompleted':
+				paths = [[]];
+				currentWord = action.payload;
 				return;
 		}
 	}
@@ -48,7 +53,9 @@
 			return;
 		}
 
-		socket.send(JSON.stringify(event));
+		const action = event.payload ? { [event.type]: event.payload } : event.type;
+		console.log("Sending action: ", action);
+		socket.send(JSON.stringify(action));
 	}
 
 	function joinInputRoom() {
@@ -56,9 +63,11 @@
 	}
 
 	function socketMessage(event) {
-		const action = JSON.parse(event.data);
-		console.log("Received action: ", action);
-		handleAction(action);
+		const actions = JSON.parse(event.data);
+		console.log("Received actions: ", actions);
+		typeof actions === "string"
+			? handleAction({ type: actions })
+			: Object.entries(actions).map(entry => handleAction({ type: entry[0], payload: entry[1] }));
 	}
 
 	async function joinRoom(roomToJoin) {
@@ -95,7 +104,7 @@
 		e.preventDefault();
 		e.stopImmediatePropagation();
 		isDrawing = false;
-		const action = { type: 'PATH_CLOSED' };
+		const action = { type: 'pathClosed' };
 		handleAction(action);
 		sendIfOpen(action);
 	}
@@ -104,10 +113,14 @@
 		e.stopImmediatePropagation();
 		if (isDrawing) {
 			const point = { x: e.offsetX, y: e.offsetY };
-			const action = { type: 'POINT_CREATED', payload: point };
+			const action = { type: 'pointCreated', payload: point };
 			handleAction(action);
 			sendIfOpen(action);
 		}
+	}
+
+	function nextWord() {
+		sendIfOpen({ type: 'nextWordStart' });
 	}
 </script>
 
@@ -117,6 +130,9 @@
 		<p>You are in game {room}</p>
 		<p>The word is: {currentWord}</p>
 		<p>isDrawing: {isDrawing}</p>
+		<button on:click={nextWord}>
+			Next Word
+		</button>
 		<svg class="board" width="320" height="640" xmlns="http://www.w3.org/2000/svg" on:mousedown={boardMouseDown} on:mouseup={boardMouseUp} on:mousemove={boardMouseMove}>
 			{#each paths as path}
 				{#each path as point, index}
