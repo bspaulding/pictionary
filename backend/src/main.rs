@@ -23,10 +23,8 @@ struct WebSocketDisconnected {
 }
 
 #[derive(Message)]
-#[rtype(result = "PictionaryModel")]
-struct CreateRoom {
-    room: String
-}
+#[rtype(result = "CreateRoomResponse")]
+struct CreateRoom;
 
 struct PictionaryWebSocketSession {
     id: SessionId,
@@ -259,19 +257,27 @@ impl Handler<WebSocketDisconnected> for PictionaryServer {
     fn handle(&mut self, msg: WebSocketDisconnected, _: &mut Self::Context) {
         println!("Someone disconnected");
 
+        let mut rooms_to_remove: Vec<String> = vec![];
         if self.sessions_by_id.remove(&msg.id).is_some() {
-            for (_name, sessions) in &mut self.sessions_by_room_id {
+            for (room_id, sessions) in &mut self.sessions_by_room_id {
                 sessions.remove(&msg.id);
                 // TODO: maybe send message to room about disconnect
+                if sessions.is_empty() {
+                    rooms_to_remove.push(room_id.clone());
+                }
             }
+        }
+        for room_id in rooms_to_remove {
+            self.sessions_by_room_id.remove(&room_id);
+            self.models_by_room_id.remove(&room_id);
         }
     }
 }
 
-impl<A, M> actix::dev::MessageResponse<A, M> for PictionaryModel
+impl<A, M> actix::dev::MessageResponse<A, M> for CreateRoomResponse
 where
     A: Actor,
-    M: Message<Result = PictionaryModel>,
+    M: Message<Result = CreateRoomResponse>,
 {
     fn handle<R: actix::dev::ResponseChannel<M>>(self, _: &mut A::Context, tx: Option<R>) {
         if let Some(tx) = tx {
@@ -281,15 +287,24 @@ where
 }
 
 impl Handler<CreateRoom> for PictionaryServer {
-    type Result = PictionaryModel;
+    type Result = CreateRoomResponse;
 
-    fn handle(&mut self, msg: CreateRoom, _: &mut Self::Context) -> Self::Result {
-        println!("Creating room {:?} ", msg.room);
+    fn handle(&mut self, _msg: CreateRoom, _: &mut Self::Context) -> Self::Result {
+        let letters: Vec<char> = vec!['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+        let mut rng = rand::thread_rng();
+        let mut room: String = letters.choose_multiple(&mut rng, 4).collect::<String>();
+        while self.sessions_by_room_id.contains_key(&room) {
+            room = letters.choose_multiple(&mut rng, 4).collect::<String>();
+        }
+        println!("Creating room {}...", room);
 
-        self.sessions_by_room_id.insert(msg.room.clone(), HashSet::new());
+        self.sessions_by_room_id.insert(room.clone(), HashSet::new());
         let model = PictionaryModel::default();
-        self.models_by_room_id.insert(msg.room.clone(), model.clone());
-        model
+        self.models_by_room_id.insert(room.clone(), model.clone());
+        CreateRoomResponse {
+            room,
+            model
+        }
     }
 }
 
@@ -337,13 +352,8 @@ struct CreateRoomResponse {
 }
 
 async fn create_room(server: web::Data<Addr<PictionaryServer>>) -> impl Responder {
-    let response: PictionaryModel = server.send(CreateRoom {
-        room: String::from("xkcd")
-    }).await.unwrap();
-    HttpResponse::Ok().json(CreateRoomResponse {
-        room: String::from("xkcd"),
-        model: response
-    })
+    let response: CreateRoomResponse = server.send(CreateRoom).await.unwrap();
+    HttpResponse::Ok().json(response)
 }
 
 #[actix_rt::main]
