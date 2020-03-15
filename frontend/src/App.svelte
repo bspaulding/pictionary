@@ -5,6 +5,7 @@
 	let currentWord;
 	let socket;
 	let paths = [[]];
+	let roomNotFound = false;
 	function closePath() {
 		paths = [...paths, []];
 	}
@@ -28,6 +29,9 @@
 			case 'skipWordCompleted':
 				paths = [[]];
 				currentWord = action.payload;
+				return;
+			case 'RoomNotFound':
+				roomNotFound = true;
 				return;
 		}
 	}
@@ -71,6 +75,7 @@
 	}
 
 	async function joinRoom(roomToJoin) {
+			roomNotFound = false;
 			socket = new WebSocket(`ws://${window.location.host}/api/v1/rooms/${roomToJoin}/ws`);
 			socket.onerror = socketError;
 			socket.onclose = socketClose;
@@ -84,6 +89,7 @@
 	}
 
 	async function createRoom() {
+		createRoomFailed = false;
 		const response = await fetch("/api/v1/rooms", { method: "POST" });
 		if (response.ok) {
 			const json = await response.json();
@@ -155,11 +161,16 @@
 		<button on:click={joinInputRoom}>
 			Join a Game
 		</button>
+		{#if roomNotFound}
+		<p class="error">Uh-oh, I couldn't find that room. Please try again!</p>
+		{/if}
 	{/if}
 </main>
 
 <style>
 	main {
+		--color-red: #ff3e00;
+
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
@@ -167,7 +178,7 @@
 	}
 
 	h1 {
-		color: #ff3e00;
+		color: var(--color-red);
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
@@ -180,6 +191,10 @@
 		margin: 0px auto;
 		position: relative;
 		display: block;
+	}
+
+	.error {
+		color: var(--color-red);
 	}
 
 	@media (min-width: 640px) {

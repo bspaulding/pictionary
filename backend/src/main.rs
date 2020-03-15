@@ -47,8 +47,16 @@ impl Actor for PictionaryWebSocketSession {
         .then(|response, actor, context| {
             match response {
                 Ok(response) => {
-                    actor.id = response.id;
-                    context.text(serde_json::to_string(&WsEvent::ModelState(response.model)).unwrap())
+                    match response {
+                        WebSocketConnectedResult::JoinedRoom { id, model } => {
+                            actor.id = id;
+                            context.text(serde_json::to_string(&WsEvent::ModelState(model)).unwrap())
+                        },
+                        WebSocketConnectedResult::RoomNotFound => {
+                            context.text(serde_json::to_string(&response).unwrap());
+                            context.stop();
+                        }
+                    }
                 },
                 _ => context.stop()
             }
@@ -205,9 +213,12 @@ impl Actor for PictionaryServer {
 }
 
 #[derive(Serialize)]
-struct WebSocketConnectedResult {
-    id: SessionId,
-    model: PictionaryModel,
+enum WebSocketConnectedResult {
+    JoinedRoom {
+        id: SessionId,
+        model: PictionaryModel,
+    },
+    RoomNotFound
 }
 
 impl<A, M> actix::dev::MessageResponse<A, M> for WebSocketConnectedResult
@@ -228,13 +239,17 @@ impl Handler<WebSocketConnected> for PictionaryServer {
 
     fn handle(&mut self, msg: WebSocketConnected, _: &mut Context<Self>) -> Self::Result {
         println!("Someone joined room with id: {:?}", msg.room_id);
-        // TODO: return error if room does not exist
         // TODO: send player joined message to all sessions in room
         let id = Uuid::new_v4();
         self.sessions_by_id.insert(id, msg.addr);
-        self.sessions_by_room_id.get_mut(&msg.room_id).unwrap().insert(id);
-        let model = self.models_by_room_id.get(&msg.room_id).unwrap().clone();
-        WebSocketConnectedResult { id, model }
+        match self.sessions_by_room_id.get_mut(&msg.room_id) {
+            Some(sessions) => {
+                sessions.insert(id);
+                let model = self.models_by_room_id.get(&msg.room_id).unwrap().clone();
+                WebSocketConnectedResult::JoinedRoom { id, model }
+            }
+            None => WebSocketConnectedResult::RoomNotFound
+        }
     }
 }
 
