@@ -139,6 +139,23 @@
 			sendIfOpen(action);
 		}
 	}
+	function boardTouchMove(e) {
+		if (!currentWord) {
+			return;
+		}
+		e.preventDefault();
+		e.stopImmediatePropagation();
+		if (isDrawing) {
+			const touch = e.changedTouches[0];
+			const rect = document.querySelector("svg").getBoundingClientRect()
+			console.log({ rect, touch});
+			const { top, left } = rect;
+			const point = { x: Math.round(touch.pageX - left - window.scrollX), y: Math.round(touch.pageY - top - window.scrollY) };
+			const action = { type: 'pointCreated', payload: point };
+			handleAction(action);
+			sendIfOpen(action);
+		}
+	}
 
 	function skipWord() {
 		sendIfOpen({ type: 'skipWordStart' });
@@ -164,7 +181,14 @@
 			Next Round
 		</button>
 		{/if}
-		<svg class="board" width="320" height="640" xmlns="http://www.w3.org/2000/svg" on:mousedown={boardMouseDown} on:mouseup={boardMouseUp} on:mousemove={boardMouseMove}>
+		<svg class="board" width="320" height="640" xmlns="http://www.w3.org/2000/svg"
+			on:mousedown={boardMouseDown}
+			on:mouseup={boardMouseUp}
+			on:mousemove={boardMouseMove}
+			on:touchstart={boardMouseDown}
+			on:touchend={boardMouseUp}
+			on:touchmove={boardTouchMove}
+			>
 			{#each paths as path}
 				{#each path as point, index}
 					{#if index !== 0}
