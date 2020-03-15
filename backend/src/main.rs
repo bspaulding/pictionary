@@ -6,7 +6,7 @@ use actix_web_actors::ws;
 use env_logger;
 use rand::seq::SliceRandom;
 use serde::{Deserialize, Serialize};
-use std::collections::{HashMap, HashSet};
+use std::collections::HashMap;
 use uuid::Uuid;
 
 #[derive(Message)]
@@ -46,9 +46,8 @@ impl Actor for PictionaryWebSocketSession {
             match response {
                 Ok(response) => {
                     match response {
-                        WebSocketConnectedResult::JoinedRoom { id, model } => {
+                        WebSocketConnectedResult::JoinedRoom { id } => {
                             actor.id = id;
-                            context.text(serde_json::to_string(&WsEvent::PathSet(model.paths)).unwrap())
                         },
                         WebSocketConnectedResult::RoomNotFound => {
                             context.text(serde_json::to_string(&response).unwrap());
@@ -88,6 +87,7 @@ enum WsEvent {
     SkipWordCompleted(String),
     PathSet(Vec<Vec<Point>>),
     NewWord(String),
+    NextRound,
 }
 
 #[derive(Debug, Serialize, Message)]
@@ -151,6 +151,7 @@ struct PictionaryModel {
     used_words: Vec<String>,
     paths: Vec<Vec<Point>>,
     words: PictionaryWords,
+    current_session_id: Option<SessionId>,
 }
 
 impl Default for PictionaryModel {
@@ -162,6 +163,7 @@ impl Default for PictionaryModel {
             used_words: vec![],
             paths: vec![vec![]],
             words,
+            current_session_id: None
         }
     }
 }
@@ -194,13 +196,12 @@ impl Default for PictionaryWords {
 type SessionId = Uuid;
 struct PictionaryServer {
     sessions_by_id: HashMap<SessionId, Recipient<WsEvent>>,
-    sessions_by_room_id: HashMap<String, HashSet<SessionId>>, // room id / session ids
+    sessions_by_room_id: HashMap<String, Vec<SessionId>>, // room id / session ids
     models_by_room_id: HashMap<String, PictionaryModel>,
 }
 
 impl Default for PictionaryServer {
     fn default() -> PictionaryServer {
-        println!("PictionaryServer#default");
         PictionaryServer {
             sessions_by_id: HashMap::new(),
             sessions_by_room_id: HashMap::new(),
@@ -215,10 +216,7 @@ impl Actor for PictionaryServer {
 
 #[derive(Serialize)]
 enum WebSocketConnectedResult {
-    JoinedRoom {
-        id: SessionId,
-        model: PictionaryModel
-    },
+    JoinedRoom { id: SessionId },
     RoomNotFound
 }
 
@@ -245,12 +243,15 @@ impl Handler<WebSocketConnected> for PictionaryServer {
         self.sessions_by_id.insert(id, msg.addr);
         match self.sessions_by_room_id.get_mut(&msg.room_id) {
             Some(sessions) => {
-                sessions.insert(id);
-                let model = self.models_by_room_id.get(&msg.room_id).unwrap().clone();
+                sessions.push(id);
+                let model = self.models_by_room_id.get_mut(&msg.room_id).unwrap();
+                let session = self.sessions_by_id.get(&id).unwrap();
                 if sessions.len() == 1 {
-                    self.sessions_by_id.get(&id).unwrap().do_send(WsEvent::NewWord(model.current_word.clone())).unwrap();
+                    model.current_session_id = Some(id);
+                    session.do_send(WsEvent::NewWord(model.current_word.clone())).unwrap();
                 }
-                WebSocketConnectedResult::JoinedRoom { id, model }
+                session.do_send(WsEvent::PathSet(model.paths.clone())).unwrap();
+                WebSocketConnectedResult::JoinedRoom { id }
             }
             None => WebSocketConnectedResult::RoomNotFound
         }
@@ -266,7 +267,8 @@ impl Handler<WebSocketDisconnected> for PictionaryServer {
         let mut rooms_to_remove: Vec<String> = vec![];
         if self.sessions_by_id.remove(&msg.id).is_some() {
             for (room_id, sessions) in &mut self.sessions_by_room_id {
-                sessions.remove(&msg.id);
+                let index = sessions.iter().position(|&x| x == msg.id).unwrap();
+                sessions.remove(index);
                 // TODO: maybe send message to room about disconnect
                 if sessions.is_empty() {
                     rooms_to_remove.push(room_id.clone());
@@ -304,7 +306,7 @@ impl Handler<CreateRoom> for PictionaryServer {
         }
         println!("Creating room {}...", room);
 
-        self.sessions_by_room_id.insert(room.clone(), HashSet::new());
+        self.sessions_by_room_id.insert(room.clone(), vec![]);
         let model = PictionaryModel::default();
         self.models_by_room_id.insert(room.clone(), model.clone());
         CreateRoomResponse {
@@ -321,6 +323,7 @@ impl Handler<WsRoomEvent> for PictionaryServer {
         let model = self.models_by_room_id.get_mut(&msg.room_id).unwrap();
         let mut owner_responses = vec![];
         let mut responses = vec![];
+        let session_ids: &Vec<SessionId> = self.sessions_by_room_id.get(&msg.room_id).unwrap();
         match &msg.event {
             WsEvent::PointCreated(point) => {
                 model.paths.last_mut().unwrap().push(point.clone());
@@ -339,9 +342,30 @@ impl Handler<WsRoomEvent> for PictionaryServer {
                 model.paths.push(vec![]);
                 responses.push(WsEvent::PathSet(model.paths.clone()));
             },
+            WsEvent::NextRound => {
+                // Pick a new drawing player
+                let current_session_index = session_ids.iter().position(|&x| x == model.current_session_id.unwrap()).unwrap();
+                let next_session_index = if current_session_index == session_ids.len() - 1 {
+                    0
+                } else {
+                    current_session_index + 1
+                };
+                model.current_session_id = Some(session_ids[next_session_index]);
+
+                // pick a new word
+                model.current_word = model.words.easy.pop().unwrap_or_else(|| {
+                    model.words = PictionaryWords::default();
+                    model.words.easy.pop().unwrap()
+                });
+                owner_responses.push(WsEvent::NewWord(model.current_word.clone()));
+
+                // clear the paths
+                model.paths.clear();
+                model.paths.push(vec![]);
+                responses.push(WsEvent::PathSet(model.paths.clone()));
+            },
             _ => ()
         }
-        let session_ids: &HashSet<SessionId> = self.sessions_by_room_id.get(&msg.room_id).unwrap();
         for session_id in session_ids {
             if let Some(addr) = self.sessions_by_id.get(session_id) {
                 if session_id != &msg.session_id {
@@ -350,7 +374,7 @@ impl Handler<WsRoomEvent> for PictionaryServer {
                 for response in responses.iter() {
                     addr.do_send(response.clone()).unwrap();
                 }
-                if session_id == &msg.session_id {
+                if session_id == &model.current_session_id.unwrap() {
                     for response in owner_responses.iter() {
                         addr.do_send(response.clone()).unwrap();
                     }

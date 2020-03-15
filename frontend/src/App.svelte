@@ -36,6 +36,9 @@
 			case 'RoomNotFound':
 				roomNotFound = true;
 				return;
+			case 'nextRound':
+				currentWord = undefined;
+				return;
 		}
 	}
 
@@ -140,6 +143,11 @@
 	function skipWord() {
 		sendIfOpen({ type: 'skipWordStart' });
 	}
+
+	function nextRound() {
+		handleAction({ type: 'nextRound' });
+		sendIfOpen({ type: 'nextRound' });
+	}
 </script>
 
 <main>
@@ -151,6 +159,9 @@
 		<p>isDrawing: {isDrawing}</p>
 		<button on:click={skipWord}>
 			Skip Word
+		</button>
+		<button on:click={nextRound}>
+			Next Round
 		</button>
 		{/if}
 		<svg class="board" width="320" height="640" xmlns="http://www.w3.org/2000/svg" on:mousedown={boardMouseDown} on:mouseup={boardMouseUp} on:mousemove={boardMouseMove}>
