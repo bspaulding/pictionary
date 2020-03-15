@@ -25,7 +25,7 @@
 				paths = action.payload.paths;
 				currentWord = action.payload.currentWord;
 				return;
-			case 'nextWordCompleted':
+			case 'skipWordCompleted':
 				paths = [[]];
 				currentWord = action.payload;
 				return;
@@ -119,8 +119,8 @@
 		}
 	}
 
-	function nextWord() {
-		sendIfOpen({ type: 'nextWordStart' });
+	function skipWord() {
+		sendIfOpen({ type: 'skipWordStart' });
 	}
 </script>
 
@@ -130,8 +130,8 @@
 		<p>You are in game {room}</p>
 		<p>The word is: {currentWord}</p>
 		<p>isDrawing: {isDrawing}</p>
-		<button on:click={nextWord}>
-			Next Word
+		<button on:click={skipWord}>
+			Skip Word
 		</button>
 		<svg class="board" width="320" height="640" xmlns="http://www.w3.org/2000/svg" on:mousedown={boardMouseDown} on:mouseup={boardMouseUp} on:mousemove={boardMouseMove}>
 			{#each paths as path}

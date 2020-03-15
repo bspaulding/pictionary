@@ -78,8 +78,8 @@ impl Handler<WsEvent> for PictionaryWebSocketSession {
 enum WsEvent {
     PointCreated(Point),
     PathClosed,
-    NextWordStart,
-    NextWordCompleted(String),
+    SkipWordStart,
+    SkipWordCompleted(String),
     ModelState(PictionaryModel),
 }
 
@@ -292,14 +292,14 @@ impl Handler<WsRoomEvent> for PictionaryServer {
             WsEvent::PathClosed => {
                 model.paths.push(vec![]);
             },
-            WsEvent::NextWordStart => {
+            WsEvent::SkipWordStart => {
                 model.current_word = model.words.easy.pop().unwrap_or_else(|| {
                     model.words = PictionaryWords::default();
                     model.words.easy.pop().unwrap()
                 });
                 model.paths.clear();
                 model.paths.push(vec![]);
-                responses.push(WsEvent::NextWordCompleted(model.current_word.clone()));
+                responses.push(WsEvent::SkipWordCompleted(model.current_word.clone()));
             },
             _ => ()
         }
