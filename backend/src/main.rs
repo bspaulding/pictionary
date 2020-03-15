@@ -48,7 +48,7 @@ impl Actor for PictionaryWebSocketSession {
                     match response {
                         WebSocketConnectedResult::JoinedRoom { id, model } => {
                             actor.id = id;
-                            context.text(serde_json::to_string(&WsEvent::ModelState(model)).unwrap())
+                            context.text(serde_json::to_string(&WsEvent::PathSet(model.paths)).unwrap())
                         },
                         WebSocketConnectedResult::RoomNotFound => {
                             context.text(serde_json::to_string(&response).unwrap());
@@ -86,7 +86,8 @@ enum WsEvent {
     PathClosed,
     SkipWordStart,
     SkipWordCompleted(String),
-    ModelState(PictionaryModel),
+    PathSet(Vec<Vec<Point>>),
+    NewWord(String),
 }
 
 #[derive(Debug, Serialize, Message)]
@@ -149,7 +150,7 @@ struct PictionaryModel {
     current_word: String,
     used_words: Vec<String>,
     paths: Vec<Vec<Point>>,
-    words: PictionaryWords
+    words: PictionaryWords,
 }
 
 impl Default for PictionaryModel {
@@ -160,7 +161,7 @@ impl Default for PictionaryModel {
             current_word,
             used_words: vec![],
             paths: vec![vec![]],
-            words
+            words,
         }
     }
 }
@@ -216,7 +217,7 @@ impl Actor for PictionaryServer {
 enum WebSocketConnectedResult {
     JoinedRoom {
         id: SessionId,
-        model: PictionaryModel,
+        model: PictionaryModel
     },
     RoomNotFound
 }
@@ -246,6 +247,9 @@ impl Handler<WebSocketConnected> for PictionaryServer {
             Some(sessions) => {
                 sessions.insert(id);
                 let model = self.models_by_room_id.get(&msg.room_id).unwrap().clone();
+                if sessions.len() == 1 {
+                    self.sessions_by_id.get(&id).unwrap().do_send(WsEvent::NewWord(model.current_word.clone())).unwrap();
+                }
                 WebSocketConnectedResult::JoinedRoom { id, model }
             }
             None => WebSocketConnectedResult::RoomNotFound
@@ -315,6 +319,7 @@ impl Handler<WsRoomEvent> for PictionaryServer {
 
     fn handle(&mut self, msg: WsRoomEvent, _: &mut Self::Context) {
         let model = self.models_by_room_id.get_mut(&msg.room_id).unwrap();
+        let mut owner_responses = vec![];
         let mut responses = vec![];
         match &msg.event {
             WsEvent::PointCreated(point) => {
@@ -328,9 +333,11 @@ impl Handler<WsRoomEvent> for PictionaryServer {
                     model.words = PictionaryWords::default();
                     model.words.easy.pop().unwrap()
                 });
+                owner_responses.push(WsEvent::SkipWordCompleted(model.current_word.clone()));
+
                 model.paths.clear();
                 model.paths.push(vec![]);
-                responses.push(WsEvent::SkipWordCompleted(model.current_word.clone()));
+                responses.push(WsEvent::PathSet(model.paths.clone()));
             },
             _ => ()
         }
@@ -339,7 +346,12 @@ impl Handler<WsRoomEvent> for PictionaryServer {
             if let Some(addr) = self.sessions_by_id.get(session_id) {
                 if session_id != &msg.session_id {
                     addr.do_send(msg.event.clone()).unwrap();
-                    for response in responses.iter() {
+                }
+                for response in responses.iter() {
+                    addr.do_send(response.clone()).unwrap();
+                }
+                if session_id == &msg.session_id {
+                    for response in owner_responses.iter() {
                         addr.do_send(response.clone()).unwrap();
                     }
                 }

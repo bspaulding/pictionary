@@ -22,11 +22,14 @@
 			case 'pointCreated':
 				pointCreated(action.payload);
 				return;
-			case 'modelState':
-				paths = action.payload.paths;
-				currentWord = action.payload.currentWord;
+			case 'pathSet':
+				paths = action.payload;
 				return;
 			case 'skipWordCompleted':
+				paths = [[]];
+				currentWord = action.payload;
+				return;
+			case 'newWord':
 				paths = [[]];
 				currentWord = action.payload;
 				return;
@@ -102,11 +105,17 @@
 
 	let isDrawing = false;
 	function boardMouseDown(e) {
+		if (!currentWord) {
+			return;
+		}
 		e.preventDefault();
 		e.stopImmediatePropagation();
 		isDrawing = true;
 	}
 	function boardMouseUp(e) {
+		if (!currentWord) {
+			return;
+		}
 		e.preventDefault();
 		e.stopImmediatePropagation();
 		isDrawing = false;
@@ -115,6 +124,9 @@
 		sendIfOpen(action);
 	}
 	function boardMouseMove(e) {
+		if (!currentWord) {
+			return;
+		}
 		e.preventDefault();
 		e.stopImmediatePropagation();
 		if (isDrawing) {
@@ -137,10 +149,10 @@
 		{#if currentWord}
 		<p>The word is: {currentWord}</p>
 		<p>isDrawing: {isDrawing}</p>
-		{/if}
 		<button on:click={skipWord}>
 			Skip Word
 		</button>
+		{/if}
 		<svg class="board" width="320" height="640" xmlns="http://www.w3.org/2000/svg" on:mousedown={boardMouseDown} on:mouseup={boardMouseUp} on:mousemove={boardMouseMove}>
 			{#each paths as path}
 				{#each path as point, index}
