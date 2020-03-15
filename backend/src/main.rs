@@ -93,6 +93,7 @@ enum WsEvent {
 #[rtype(result = "()")]
 struct WsRoomEvent {
     room_id: String,
+    session_id: SessionId,
     event: WsEvent
 }
 
@@ -107,6 +108,7 @@ impl StreamHandler<Result<ws::Message, ws::ProtocolError>> for PictionaryWebSock
             Ok(ws::Message::Text(text)) => {
                 self.addr.do_send(WsRoomEvent {
                     room_id: self.room_id.clone(),
+                    session_id: self.id,
                     event: serde_json::from_str(&text).unwrap()
                 });
             },
@@ -312,7 +314,6 @@ impl Handler<WsRoomEvent> for PictionaryServer {
     type Result = ();
 
     fn handle(&mut self, msg: WsRoomEvent, _: &mut Self::Context) {
-        // TODO: don't re-send to the sender
         let model = self.models_by_room_id.get_mut(&msg.room_id).unwrap();
         let mut responses = vec![];
         match &msg.event {
@@ -336,9 +337,11 @@ impl Handler<WsRoomEvent> for PictionaryServer {
         let session_ids: &HashSet<SessionId> = self.sessions_by_room_id.get(&msg.room_id).unwrap();
         for session_id in session_ids {
             if let Some(addr) = self.sessions_by_id.get(session_id) {
-                addr.do_send(msg.event.clone()).unwrap();
-                for response in responses.iter() {
-                    addr.do_send(response.clone()).unwrap();
+                if session_id != &msg.session_id {
+                    addr.do_send(msg.event.clone()).unwrap();
+                    for response in responses.iter() {
+                        addr.do_send(response.clone()).unwrap();
+                    }
                 }
             }
         }
