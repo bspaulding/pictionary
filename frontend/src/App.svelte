@@ -134,8 +134,10 @@
 	<h1>Pictionary</h1>
 	{#if room}
 		<p>You are in game {room}</p>
+		{#if currentWord}
 		<p>The word is: {currentWord}</p>
 		<p>isDrawing: {isDrawing}</p>
+		{/if}
 		<button on:click={skipWord}>
 			Skip Word
 		</button>
