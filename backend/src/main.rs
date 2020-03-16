@@ -128,13 +128,11 @@ async fn ws_handler(
     info: web::Path<String>,
 ) -> Result<HttpResponse, Error> {
     println!("Opening socket for room: {:?}", info);
-    let resp = ws::start(PictionaryWebSocketSession {
+    ws::start(PictionaryWebSocketSession {
         id: Uuid::new_v4(),
         room_id: info.to_string(),
         addr: server.get_ref().clone(),
-    }, &req, stream);
-    println!("{:?}", resp);
-    resp
+    }, &req, stream)
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
