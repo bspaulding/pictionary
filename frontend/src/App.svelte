@@ -150,7 +150,7 @@
 			const rect = document.querySelector("svg").getBoundingClientRect()
 			console.log({ rect, touch});
 			const { top, left } = rect;
-			const point = { x: Math.round(touch.pageX - left - window.scrollX), y: Math.round(touch.pageY - top - window.scrollY) };
+			const point = { x: Math.max(0, Math.round(touch.pageX - left - window.scrollX)), y: Math.max(Math.round(touch.pageY - top - window.scrollY)) };
 			const action = { type: 'pointCreated', payload: point };
 			handleAction(action);
 			sendIfOpen(action);
