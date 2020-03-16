@@ -82,7 +82,7 @@
 
 	async function joinRoom(roomToJoin) {
 			roomNotFound = false;
-			socket = new WebSocket(`ws://${window.location.host}/api/v1/rooms/${roomToJoin}/ws`);
+			socket = new WebSocket(`${window.location.protocol === "http:" ? "ws" : "wss"}://${window.location.host}/api/v1/rooms/${roomToJoin}/ws`);
 			socket.onerror = socketError;
 			socket.onclose = socketClose;
 			socket.onopen = () => {
