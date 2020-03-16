@@ -265,8 +265,10 @@ impl Handler<WebSocketDisconnected> for PictionaryServer {
         let mut rooms_to_remove: Vec<String> = vec![];
         if self.sessions_by_id.remove(&msg.id).is_some() {
             for (room_id, sessions) in &mut self.sessions_by_room_id {
-                let index = sessions.iter().position(|&x| x == msg.id).unwrap();
-                sessions.remove(index);
+                match sessions.iter().position(|&x| x == msg.id) {
+                    Some(index) => { sessions.remove(index); },
+                    None => ()
+                }
                 // TODO: maybe send message to room about disconnect
                 if sessions.is_empty() {
                     rooms_to_remove.push(room_id.clone());
