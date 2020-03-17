@@ -10,7 +10,7 @@ COPY backend /backend
 RUN cargo install --path .
 
 FROM debian:buster-slim
-# RUN apt-get update && apt-get install -y extra-runtime-dependencies
+RUN apt-get update && apt-get install -y libssl-dev
 COPY --from=backend /usr/local/cargo/bin/pictionary /usr/local/bin/pictionary
 COPY --from=frontend /frontend/public /app/frontend/public
 WORKDIR /app/backend

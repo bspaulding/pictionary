@@ -18,3 +18,4 @@ serde_json = "1.0"
 env_logger = "0.7"
 uuid = { version = "0.8.1", features = ["serde", "v4"] }
 rand = "0.7.3"
+sentry = "0.12.0"
