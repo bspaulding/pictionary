@@ -415,10 +415,14 @@ async fn main() -> std::io::Result<()> {
             .service(fs::Files::new("/", "../frontend/public").index_file("index.html"))
     });
 
+    let port = match std::env::var("PORT") {
+        Ok(port) => port,
+        Err(_) => "3000".to_string()
+    };
     server = if let Some(l) = listenfd.take_tcp_listener(0).unwrap() {
         server.listen(l)?
     } else {
-        server.bind("0.0.0.0:3000")?
+        server.bind(format!("0.0.0.0:{}", port))?
     };
 
     server.run().await
