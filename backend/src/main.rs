@@ -397,8 +397,8 @@ async fn create_room(server: web::Data<Addr<PictionaryServer>>) -> impl Responde
 
 #[actix_rt::main]
 async fn main() -> std::io::Result<()> {
-    let _guard = sentry::init("https://76c3dbf3c8b3436da37f8fedc88b2d6a@sentry.io/4977020");
-    sentry::integrations::panic::register_panic_handler();
+    // let _guard = sentry::init("https://76c3dbf3c8b3436da37f8fedc88b2d6a@sentry.io/4977020");
+    // sentry::integrations::panic::register_panic_handler();
 
     std::env::set_var("RUST_LOG", "my_errors=debug,actix_web=info");
     std::env::set_var("RUST_BACKTRACE", "1");
