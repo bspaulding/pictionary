@@ -18,7 +18,7 @@ RUN cargo install --path .
 FROM debian:buster-slim
 RUN apt-get update && apt-get install -y libssl-dev
 COPY --from=backend /usr/local/cargo/bin/pictionary /usr/local/bin/pictionary
-COPY --from=frontend /frontend/public /app/frontend/public
+COPY --from=frontend /frontend/dist /app/frontend/dist
 WORKDIR /app/backend
 EXPOSE 80
 ENV PORT=80
