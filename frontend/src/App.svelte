@@ -39,6 +39,9 @@
 			case 'nextRound':
 				currentWord = undefined;
 				return;
+			case 'clearPaths':
+				paths = [[]];
+				return;
 		}
 	}
 
@@ -165,6 +168,11 @@
 		handleAction({ type: 'nextRound' });
 		sendIfOpen({ type: 'nextRound' });
 	}
+
+	function clearBoard() {
+		handleAction({ type: 'clearPaths' });
+		sendIfOpen({ type: 'clearPaths' });
+	}
 </script>
 
 <main>
@@ -178,6 +186,9 @@
 		</button>
 		<button on:click={nextRound}>
 			Next Round
+		</button>
+		<button on:click={clearBoard}>
+			Clear
 		</button>
 		{/if}
 		<svg class="board" width="320" height="640" xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,9 @@
 FROM node:erbium as frontend
 WORKDIR /frontend
-COPY frontend /frontend
+COPY package.json package.json
+COPY package-lock.json package-lock.json
 RUN npm install
+COPY frontend /frontend
 RUN npm run build
 
 FROM rust:1.42 as backend
