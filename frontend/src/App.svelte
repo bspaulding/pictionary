@@ -83,9 +83,12 @@
 			: Object.entries(actions).map(entry => handleAction({ type: entry[0], payload: entry[1] }));
 	}
 
+	const location = window.location;
+	// const location = { protocol: 'https:', host: 'pictionary.motingo.com', port: '3000' };
+
 	async function joinRoom(roomToJoin) {
 			roomNotFound = false;
-			socket = new WebSocket(`${window.location.protocol === "http:" ? "ws" : "wss"}://${window.location.host}/api/v1/rooms/${roomToJoin}/ws`);
+			socket = new WebSocket(`${location.protocol === "http:" ? "ws" : "wss"}://${location.host}/api/v1/rooms/${roomToJoin}/ws`);
 			socket.onerror = socketError;
 			socket.onclose = socketClose;
 			socket.onopen = () => {
@@ -99,7 +102,7 @@
 
 	async function createRoom() {
 		createRoomFailed = false;
-		const response = await fetch("/api/v1/rooms", { method: "POST" });
+		const response = await fetch(`${location.protocol}//${location.host}/api/v1/rooms`, { method: "POST" });
 		if (response.ok) {
 			const json = await response.json();
 			room = json.room;
@@ -178,9 +181,15 @@
 <main>
 	<h1>Pictionary</h1>
 	{#if room}
-		<p>You are in game {room}</p>
+		<div class="row space-between">
+		<p>ROOM<br/><span class="room">{room}</span></p>
 		{#if currentWord}
-		<p>The word is: {currentWord}</p>
+		<p>Your turn! The word is<br/>
+		<span class="current-word">{currentWord}<span></p>
+		{/if}
+		</div>
+		{#if currentWord}
+		<div class="row">
 		<button on:click={skipWord}>
 			Skip Word
 		</button>
@@ -190,6 +199,7 @@
 		<button on:click={clearBoard}>
 			Clear
 		</button>
+		</div>
 		{/if}
 		<svg class="board" width="320" height="640" xmlns="http://www.w3.org/2000/svg"
 			on:mousedown={boardMouseDown}
@@ -231,16 +241,23 @@
 		--color-red: #ff3e00;
 
 		text-align: center;
-		padding: 1em;
-		max-width: 240px;
 		margin: 0 auto;
 	}
 
 	h1 {
 		color: var(--color-red);
 		text-transform: uppercase;
-		font-size: 4em;
+		font-size: 2em;
 		font-weight: 100;
+		margin: 0px 0px 0.2em 0px;
+	}
+
+	p {
+		margin: 0px 0px 0.7em;
+	}
+
+	.current-word {
+		font-size: 2.4em;
 	}
 
 	.board {
@@ -252,9 +269,21 @@
 		display: block;
 	}
 
+	.room {
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
 	.error {
 		color: var(--color-red);
 	}
+
+	.row {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.space-between { justify-content: space-between; }
 
 	@media (min-width: 640px) {
 		main {
