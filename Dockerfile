@@ -10,7 +10,7 @@ COPY frontend/vite.config.js vite.config.js
 COPY frontend/jsconfig.json jsconfig.json
 RUN npm run build
 
-FROM rust:1.42 as backend
+FROM rust:1.64 as backend
 WORKDIR /backend
 COPY backend /backend
 RUN cargo install --path .
