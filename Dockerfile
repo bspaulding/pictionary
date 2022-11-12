@@ -1,9 +1,13 @@
-FROM node:erbium as frontend
+FROM node:lts as frontend
 WORKDIR /frontend
-COPY package.json package.json
-COPY package-lock.json package-lock.json
-RUN npm install
-COPY frontend /frontend
+COPY frontend/package.json package.json
+COPY frontend/package-lock.json package-lock.json
+RUN npm ci
+COPY frontend/index.html /frontend/index.html
+COPY frontend/src src
+COPY frontend/public public
+COPY frontend/vite.config.js vite.config.js
+COPY frontend/jsconfig.json jsconfig.json
 RUN npm run build
 
 FROM rust:1.42 as backend
