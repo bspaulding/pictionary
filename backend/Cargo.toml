@@ -2,20 +2,19 @@
 name = "pictionary"
 version = "0.1.0"
 authors = ["Bradley J. Spaulding <brad.spaulding@gmail.com>"]
-edition = "2018"
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-actix = "0.9"
-actix-web = "2.0"
-actix-rt = "1.0"
-actix-files = "0.2"
-actix-web-actors = "2.0"
-listenfd = "0.3"
+actix = "0.13.0"
+actix-web = "4"
+actix-rt = "2.7.0"
+actix-files = "0.6.2"
+actix-web-actors = "4.1.0"
+listenfd = "1"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 env_logger = "0.7"
-uuid = { version = "0.8.1", features = ["serde", "v4"] }
-rand = "0.7.3"
-sentry = "0.12.0"
+uuid = { version = "1.2.1", features = ["serde", "v4"] }
+rand = "0.8.5"

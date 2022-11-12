@@ -223,7 +223,7 @@ where
     A: Actor,
     M: Message<Result = WebSocketConnectedResult>,
 {
-    fn handle<R: actix::dev::ResponseChannel<M>>(self, _: &mut A::Context, tx: Option<R>) {
+    fn handle(self, ctx: &mut A::Context, tx: Option<actix::dev::OneshotSender<M::Result>>) {
         if let Some(tx) = tx {
             tx.send(self);
         }
@@ -246,9 +246,9 @@ impl Handler<WebSocketConnected> for PictionaryServer {
                 let session = self.sessions_by_id.get(&id).unwrap();
                 if sessions.len() == 1 {
                     model.current_session_id = Some(id);
-                    session.do_send(WsEvent::NewWord(model.current_word.clone())).unwrap();
+                    session.do_send(WsEvent::NewWord(model.current_word.clone()));
                 }
-                session.do_send(WsEvent::PathSet(model.paths.clone())).unwrap();
+                session.do_send(WsEvent::PathSet(model.paths.clone()));
                 WebSocketConnectedResult::JoinedRoom { id }
             }
             None => WebSocketConnectedResult::RoomNotFound
@@ -287,7 +287,7 @@ where
     A: Actor,
     M: Message<Result = CreateRoomResponse>,
 {
-    fn handle<R: actix::dev::ResponseChannel<M>>(self, _: &mut A::Context, tx: Option<R>) {
+    fn handle(self, ctx: &mut A::Context, tx: Option<actix::dev::OneshotSender<M::Result>>) {
         if let Some(tx) = tx {
             tx.send(self);
         }
@@ -369,14 +369,14 @@ impl Handler<WsRoomEvent> for PictionaryServer {
         for session_id in session_ids {
             if let Some(addr) = self.sessions_by_id.get(session_id) {
                 if session_id != &msg.session_id {
-                    addr.do_send(msg.event.clone()).unwrap();
+                    addr.do_send(msg.event.clone());
                 }
                 for response in responses.iter() {
-                    addr.do_send(response.clone()).unwrap();
+                    addr.do_send(response.clone());
                 }
                 if session_id == &model.current_session_id.unwrap() {
                     for response in owner_responses.iter() {
-                        addr.do_send(response.clone()).unwrap();
+                        addr.do_send(response.clone());
                     }
                 }
             }
@@ -397,9 +397,6 @@ async fn create_room(server: web::Data<Addr<PictionaryServer>>) -> impl Responde
 
 #[actix_rt::main]
 async fn main() -> std::io::Result<()> {
-    // let _guard = sentry::init("https://76c3dbf3c8b3436da37f8fedc88b2d6a@sentry.io/4977020");
-    // sentry::integrations::panic::register_panic_handler();
-
     std::env::set_var("RUST_LOG", "my_errors=debug,actix_web=info");
     std::env::set_var("RUST_BACKTRACE", "1");
     env_logger::init();
@@ -412,13 +409,14 @@ async fn main() -> std::io::Result<()> {
             .data(pictionary_server.clone())
             .route("/api/v1/rooms", web::post().to(create_room))
             .route("/api/v1/rooms/{roomId}/ws", web::get().to(ws_handler))
-            .service(fs::Files::new("/", "../frontend/public").index_file("index.html"))
+            .service(fs::Files::new("/", "../frontend/dist").index_file("index.html"))
     });
 
     let port = match std::env::var("PORT") {
         Ok(port) => port,
         Err(_) => "3000".to_string()
     };
+    println!("Binding to port {}", port);
     server = if let Some(l) = listenfd.take_tcp_listener(0).unwrap() {
         server.listen(l)?
     } else {
