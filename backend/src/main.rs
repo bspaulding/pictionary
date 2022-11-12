@@ -88,6 +88,7 @@ enum WsEvent {
     PathSet(Vec<Vec<Point>>),
     NewWord(String),
     NextRound,
+    ClearPaths,
 }
 
 #[derive(Debug, Serialize, Message)]
@@ -363,6 +364,10 @@ impl Handler<WsRoomEvent> for PictionaryServer {
                 model.paths.clear();
                 model.paths.push(vec![]);
                 responses.push(WsEvent::PathSet(model.paths.clone()));
+            },
+            WsEvent::ClearPaths => {
+                model.paths.clear();
+                model.paths.push(vec![]);
             },
             _ => ()
         }
